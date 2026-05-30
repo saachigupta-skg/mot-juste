@@ -5,6 +5,7 @@ import RevealCard from './RevealCard';
 import BingoBoard from './BingoBoard';
 import cardsData from '../data/cards.json';
 import { supabase, loadProgress, saveProgress } from '../lib/supabase';
+import { buildSmartSession, updateCardProgress, markUsedInRealLife, getMasteredCount, getLinguistLevel, getCardProgress } from '../lib/cardProgress';
 
 interface Card {
   id: string;
@@ -22,6 +23,7 @@ const SESSION_SIZE = 10;
 const STORAGE_KEY_STREAK = 'motjuste_streak';
 const STORAGE_KEY_LAST_PLAYED = 'motjuste_last_played';
 const STORAGE_KEY_EARNED = 'motjuste_earned_categories';
+const STORAGE_KEY_CHALLENGE = 'motjuste_pending_challenge'; // cardId of "use it today" challenge
 
 function shuffleArray<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -94,7 +96,7 @@ interface Toast {
 
 export default function Quiz() {
   const [phase, setPhase] = useState<Phase>('quiz');
-  const [sessionCards] = useState<Card[]>(getSessionCards);
+  const [sessionCards] = useState<Card[]>(() => buildSmartSession(SESSION_SIZE));
   const [choices, setChoices] = useState<string[]>(() => buildChoices(sessionCards[0]));
   const [cardIndex, setCardIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -106,6 +108,7 @@ export default function Quiz() {
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [streak, setStreak] = useState(0);
   const [earnedCategories, setEarnedCategories] = useState<Set<string>>(new Set());
+  const [pendingChallenge, setPendingChallenge] = useState<string | null>(null); // card id
   const toastIdRef = useRef(0);
 
   useEffect(() => {
@@ -151,6 +154,10 @@ export default function Quiz() {
 
     const isCorrect = choice === currentCard.answer;
     setCardAnimation(isCorrect ? 'correct' : 'wrong');
+
+    // Track card-level progress
+    updateCardProgress(currentCard.id, isCorrect);
+    if (isCorrect) setPendingChallenge(currentCard.id);
 
     if (isCorrect) {
       setCorrectCount(c => c + 1);
@@ -214,12 +221,17 @@ export default function Quiz() {
     : null;
 
   if (phase === 'summary') {
+    const progress = getCardProgress();
+    const masteredCount = getMasteredCount(progress);
+    const level = getLinguistLevel(masteredCount);
     return (
       <SummaryScreen
         correctCount={correctCount}
         sessionCorrect={sessionCorrect}
         sessionEarned={sessionEarned}
         streak={streak}
+        masteredCount={masteredCount}
+        level={level}
         onRestart={() => window.location.reload()}
       />
     );
@@ -233,6 +245,8 @@ export default function Quiz() {
           correct={selected === currentCard.answer}
           onNext={handleNext}
           isLast={cardIndex + 1 >= SESSION_SIZE}
+          challengeCardId={pendingChallenge === currentCard.id ? currentCard.id : null}
+          onMarkUsed={() => { markUsedInRealLife(currentCard.id); setPendingChallenge(null); }}
         />
         {toasts.map(t => (
           <ToastNotification key={t.id} message={t.message} />
@@ -374,10 +388,12 @@ interface SummaryScreenProps {
   sessionCorrect: Card[];
   sessionEarned: string[];
   streak: number;
+  masteredCount: number;
+  level: { name: string; bio: string };
   onRestart: () => void;
 }
 
-function SummaryScreen({ correctCount, sessionCorrect, sessionEarned, streak, onRestart }: SummaryScreenProps) {
+function SummaryScreen({ correctCount, sessionCorrect, sessionEarned, streak, masteredCount, level, onRestart }: SummaryScreenProps) {
   function numberToWords(n: number): string {
     const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
     if (n < words.length) return words[n];
@@ -426,6 +442,21 @@ function SummaryScreen({ correctCount, sessionCorrect, sessionEarned, streak, on
             }}
           >
             {streakLabel}
+          </p>
+        )}
+      </div>
+
+      {/* Mastery level */}
+      <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+        <p style={{ fontFamily: '"DM Sans", sans-serif', fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8a7560', margin: '0 0 0.2rem' }}>
+          Level · {masteredCount} mastered
+        </p>
+        <p style={{ fontFamily: '"EB Garamond", serif', fontSize: '1.3rem', color: '#b85c38', margin: 0, fontStyle: 'italic' }}>
+          {level.name}
+        </p>
+        {level.bio && (
+          <p style={{ fontFamily: '"DM Sans", sans-serif', fontSize: '0.7rem', color: '#8a7560', margin: '0.25rem 0 0', maxWidth: '280px', marginLeft: 'auto', marginRight: 'auto', lineHeight: '1.5' }}>
+            {level.bio}
           </p>
         )}
       </div>

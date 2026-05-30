@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import CategoryBadge from './CategoryBadge';
 
 interface Card {
@@ -14,9 +15,17 @@ interface RevealCardProps {
   correct: boolean;
   onNext: () => void;
   isLast: boolean;
+  challengeCardId: string | null;
+  onMarkUsed: () => void;
 }
 
-export default function RevealCard({ card, correct, onNext, isLast }: RevealCardProps) {
+export default function RevealCard({ card, correct, onNext, isLast, challengeCardId, onMarkUsed }: RevealCardProps) {
+  const [usedMarked, setUsedMarked] = useState(false);
+
+  const handleMarkUsed = () => {
+    setUsedMarked(true);
+    onMarkUsed();
+  };
   return (
     <div className="card-surface" style={{ paddingTop: '1.5rem' }}>
       {/* Status line */}
@@ -99,6 +108,30 @@ export default function RevealCard({ card, correct, onNext, isLast }: RevealCard
           {card.example}
         </p>
       </div>
+
+      {/* "Use it today" challenge */}
+      {challengeCardId && correct && (
+        <div className="fade-in-delay-5" style={{ textAlign: 'center', marginBottom: '1rem' }}>
+          {usedMarked ? (
+            <p style={{ fontFamily: '"DM Sans", sans-serif', fontSize: '0.7rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#b85c38', margin: 0 }}>
+              Marked. Extra credit earned.
+            </p>
+          ) : (
+            <div>
+              <p style={{ fontFamily: '"EB Garamond", serif', fontStyle: 'italic', fontSize: '0.9rem', color: '#8a7560', margin: '0 0 0.4rem' }}>
+                Challenge: use <em>{card.answer}</em> today.
+              </p>
+              <button
+                onClick={handleMarkUsed}
+                type="button"
+                style={{ fontFamily: '"DM Sans", sans-serif', fontSize: '0.65rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a7560', background: 'none', border: '1px solid #cfc6b5', padding: '0.3rem 0.75rem', cursor: 'pointer' }}
+              >
+                Done ✓
+              </button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Next button */}
       <div className="fade-in-delay-5" style={{ textAlign: 'center' }}>
