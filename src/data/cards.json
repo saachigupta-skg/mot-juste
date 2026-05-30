@@ -278,5 +278,405 @@
     "answer": "Pyrrhic victory",
     "distractors": ["Hollow victory", "Own goal", "Winning the battle, losing the war"],
     "example": "Getting the promotion meant relocating her entire family — a Pyrrhic victory she wasn't sure she wanted."
+  },
+  {
+    "id": "sycophant",
+    "category": "Mot Juste",
+    "story": "In ancient Athens, a class of professional false accusers made their living filing frivolous lawsuits for personal gain. The Greeks called them a word combining \"fig\" and \"to show\" — one theory being that informers reported illegal fig exports; another that they made a vulgar fig-related gesture on behalf of politicians too dignified to do it themselves. Either way, the word was always about currying favor through petty betrayal.",
+    "answer": "Sycophant",
+    "distractors": ["Flatterer", "Toady", "Yes-man"],
+    "example": "He laughed at every joke the CEO made — a sycophant in a tailored suit."
+  },
+  {
+    "id": "tantalize",
+    "category": "Mot Juste",
+    "story": "Tantalus was a king who committed the ultimate offense against the gods: he killed his own son, cooked him, and served him at a divine banquet. Zeus condemned him to stand for eternity in a pool beneath a fruit tree. When he bent to drink, the water receded. When he reached for fruit, the branches withdrew. Everything he needed was visible, inches away, and permanently, precisely out of reach.",
+    "answer": "Tantalize",
+    "distractors": ["Tempt", "Tease", "Torment"],
+    "example": "The job listing tantalized her — perfect role, dream company, listed as 'no longer accepting applications.'"
+  },
+  {
+    "id": "narcissistic",
+    "category": "Mot Juste",
+    "story": "Narcissus was a beautiful young hunter in Greek mythology who rejected everyone who fell in love with him. As punishment, the goddess Nemesis led him to a pool where he saw his own reflection and fell hopelessly in love with it. He could not leave. He could not possess what he saw. He wasted away beside the water, unable to stop gazing at himself, until he became the flower that still bears his name.",
+    "answer": "Narcissistic",
+    "distractors": ["Vain", "Egotistical", "Self-absorbed"],
+    "example": "His Instagram was a narcissistic monument — 400 posts, every one of them his own face."
+  },
+  {
+    "id": "nemesis",
+    "category": "Mot Juste",
+    "story": "In Greek mythology, Nemesis was the goddess of retribution — specifically of divine punishment for those who succumbed to hubris. She was not cruel; she was exact. She did not over-punish or under-punish. It was Nemesis who guided Narcissus to the reflecting pool. Her name comes from the Greek word meaning \"to give what is due.\" She was less a villain than a correction.",
+    "answer": "Nemesis",
+    "distractors": ["Antagonist", "Rival", "Adversary"],
+    "example": "He'd avoided accountability for years. The audit was his nemesis, arriving precisely on schedule."
+  },
+  {
+    "id": "panic",
+    "category": "Mot Juste",
+    "story": "The Greek god Pan — half man, half goat — was the deity of wild places, shepherds, and the borderlands between civilization and wilderness. Ancient travelers alone in forests or mountains sometimes experienced sudden, overwhelming, sourceless terror. The Greeks attributed it to Pan, who was believed to roam those places and inflict irrational fear on anyone who wandered through his domain without reverence.",
+    "answer": "Panic",
+    "distractors": ["Hysteria", "Terror", "Dread"],
+    "example": "The network outage caused genuine panic — not fear of danger, but the formless dread of being unreachable."
+  },
+  {
+    "id": "mentor",
+    "category": "Mot Juste",
+    "story": "In Homer's Odyssey, Mentor was an old friend of Odysseus, left behind to watch over his household and young son Telemachus while Odysseus went to fight at Troy. When Telemachus needed guidance, the goddess Athena disguised herself as Mentor and provided it — wisdom offered through the trusted face of an older, experienced friend. The role was so specific and so recognizable that the name became the word.",
+    "answer": "Mentor",
+    "distractors": ["Tutor", "Coach", "Advisor"],
+    "example": "She hadn't had a mentor so much as a series of people who handed her increasingly harder problems and walked away."
+  },
+  {
+    "id": "salary",
+    "category": "Mot Juste",
+    "story": "The Roman word for salt was \"sal.\" Roman soldiers received a \"salarium\" — an allowance specifically to buy salt, which in the ancient world was essential for preserving food and difficult to obtain far inland. Whether they were paid in actual salt or simply paid money to buy it is debated, but the word traveled through Latin into French and English regardless. When we say someone \"earns their salt,\" we are still paying the same debt.",
+    "answer": "Salary",
+    "distractors": ["Wage", "Stipend", "Remuneration"],
+    "example": "She'd finally negotiated a salary that reflected what she was worth — a decade after she should have."
+  },
+  {
+    "id": "candidate",
+    "category": "Mot Juste",
+    "story": "In ancient Rome, a man seeking public office had to make himself literally visible. He would dress in a toga specially whitened with chalk — \"candidus\" in Latin meant bright white — and walk through the Forum, presenting himself to voters. The whiteness signaled purity and virtue. Romans were generally under no illusions that it necessarily indicated either.",
+    "answer": "Candidate",
+    "distractors": ["Nominee", "Applicant", "Contender"],
+    "example": "There were fourteen candidates for the position, and somehow none of them seemed quite right."
+  },
+  {
+    "id": "sinister",
+    "category": "Mot Juste",
+    "story": "In Roman augury — the practice of reading omens from the flight of birds — the left side was considered unlucky. A bird appearing on the left brought bad news. \"Sinister\" was simply the Latin word for \"left.\" Left-handed people were viewed with suspicion across many cultures; the left hand was associated with deception and misfortune. The word drifted slowly, over centuries, from meaning \"left\" to meaning something darker.",
+    "answer": "Sinister",
+    "distractors": ["Ominous", "Menacing", "Malevolent"],
+    "example": "There was something sinister about the cheerfulness of the email — nobody was that enthusiastic about mandatory Saturdays."
+  },
+  {
+    "id": "bedlam",
+    "category": "Mot Juste",
+    "story": "Bethlem Royal Hospital in London — originally the Priory of St. Mary of Bethlehem — became England's first institution for the mentally ill in the 14th century. By the 17th century, it had become a public spectacle: Londoners paid admission to walk through the wards and observe the patients. \"Bethlem\" slurred in common speech into \"Bedlam.\" The chaos and noise of the place became the word for chaos itself.",
+    "answer": "Bedlam",
+    "distractors": ["Pandemonium", "Chaos", "Mayhem"],
+    "example": "The last day of term was absolute bedlam — thirty children, no plan, a classroom that hadn't been childproofed."
+  },
+  {
+    "id": "disaster",
+    "category": "Mot Juste",
+    "story": "Before germ theory, before meteorology, before modern medicine — when terrible things happened without obvious cause, people looked upward. The Italian \"disastro\" combined \"dis\" (bad, against) with \"astro\" (star). An event so catastrophic it must be written in the stars. The same root gives us \"consider\" — to examine the stars carefully — and \"desire\" — to long for what the stars might bring. Language preserved the astrology even after the astrology was abandoned.",
+    "answer": "Disaster",
+    "distractors": ["Catastrophe", "Calamity", "Debacle"],
+    "example": "The launch was a disaster — not dramatically, just quietly, completely, undeniably wrong."
+  },
+  {
+    "id": "lunatic",
+    "category": "Mot Juste",
+    "story": "For centuries it was widely believed that the full moon caused or worsened madness. The Roman goddess of the moon was Luna, and people who displayed erratic or disturbing behavior — particularly if it seemed cyclical — were said to be \"luna-touched.\" English law, as late as the 19th century, formally distinguished \"lunatics\" (whose madness was cyclical, lunar) from \"idiots\" (whose condition was constant). The moon has since been partially exonerated.",
+    "answer": "Lunatic",
+    "distractors": ["Maniac", "Eccentric", "Deranged"],
+    "example": "Anyone who commuted three hours daily by choice, she said, was an absolute lunatic."
+  },
+  {
+    "id": "gerrymander",
+    "category": "Mot Juste",
+    "story": "In 1812, Massachusetts Governor Elbridge Gerry signed a redistricting bill that carved Essex County into a wildly misshapen electoral district designed to benefit his party. A political cartoonist drew the resulting shape as a creature with claws, wings, and a serpentine neck. A dinner guest said it looked like a salamander. Another replied: not a salamander — a Gerry-mander. The cartoon ran in the Boston Gazette. The word was born the same week.",
+    "answer": "Gerrymander",
+    "distractors": ["Redistrict", "Manipulate", "Rig the vote"],
+    "example": "The new district lines had been gerrymandered into a shape that resembled nothing found in nature."
+  },
+  {
+    "id": "dunce",
+    "category": "Mot Juste",
+    "story": "John Duns Scotus was one of the most brilliant philosophers of the 13th century — so influential that his followers were called Dunsmen. But when the Renaissance arrived with its embrace of classical learning, the Dunsmen became the loudest opponents of new ideas, clinging to medieval hair-splitting. Humanist scholars began using \"dunce\" as an insult for anyone who stubbornly refused to learn. The most brilliant man's name became the word for the dullest pupil.",
+    "answer": "Dunce",
+    "distractors": ["Dullard", "Fool", "Simpleton"],
+    "example": "She'd been made to wear the dunce cap once, aged seven, and never forgot the particular humiliation of it."
+  },
+  {
+    "id": "assassin",
+    "category": "Mot Juste",
+    "story": "During the Crusades, European soldiers encountered the Nizari Ismailis — a secretive medieval Islamic sect whose members carried out targeted political killings. Their enemies called them \"hashishiyyin\" — an Arabic slur meaning something like \"rabble\" or \"hashish-users\" — though there's no real evidence they used it. The Crusaders brought the word back as \"assassini.\" The Nizaris were real. The drug story was almost certainly propaganda invented by their enemies.",
+    "answer": "Assassin",
+    "distractors": ["Hitman", "Executioner", "Mercenary"],
+    "example": "History has a way of turning assassins into martyrs, depending on whose side writes the chapter."
+  },
+  {
+    "id": "malaria",
+    "category": "Mot Juste",
+    "story": "Before anyone understood how disease spread, people noticed that lowland areas near marshes produced devastating fevers in summer. The Italian for \"bad air\" was \"mala aria,\" and that seemed explanation enough: something foul in the vapor rising from stagnant water was making people sick. They were right that swamps were the source. They were wrong about what was actually in them. It took another three centuries to discover the mosquito.",
+    "answer": "Malaria",
+    "distractors": ["Yellow fever", "Typhoid", "Dysentery"],
+    "example": "The eradication of malaria in one generation would be one of the great achievements in human history — and it remains unfinished."
+  },
+  {
+    "id": "maverick",
+    "category": "Mot Juste",
+    "story": "Samuel Maverick was a 19th-century Texas rancher with a simple eccentricity: he refused to brand his cattle. His neighbors all branded theirs to establish ownership. Maverick didn't bother. As a result, any unbranded steer found wandering the Texas range became known as a \"maverick\" — an animal that belonged to no one, that didn't carry the mark of any group. The rancher's oddity became the word for an independent, unaffiliated person.",
+    "answer": "Maverick",
+    "distractors": ["Rebel", "Iconoclast", "Nonconformist"],
+    "example": "She was considered a maverick on the committee — which mostly meant she asked questions nobody else would."
+  },
+  {
+    "id": "meander",
+    "category": "Mot Juste",
+    "story": "The Maeander River — now called the Büyük Menderes — flows through western Turkey in elaborate, winding curves that were famous in antiquity. Greek and Roman writers used it as a reference for any path that wandered without urgency. Mosaic artists copied its pattern into decorative borders. By the time English borrowed the name, the river had become a verb for any motion that goes somewhere indirectly, at its own pace, and isn't sorry about it.",
+    "answer": "Meander",
+    "distractors": ["Wander", "Ramble", "Amble"],
+    "example": "The conversation meandered pleasantly for two hours before anyone realized no decisions had been made."
+  },
+  {
+    "id": "mamihlapinatapai",
+    "category": "Loanword",
+    "story": "The Yaghan people of Tierra del Fuego — one of the world's most isolated communities at the southern tip of South America — had a word for a moment that needs no translation once you know it: the look shared between two people who both want something to happen and are both waiting for the other to begin it. The Guinness Book of Records once named it the most succinct word in any language. English has never come close.",
+    "answer": "Mamihlapinatapai",
+    "distractors": ["Sonder", "Iktsuarpok", "Toska"],
+    "example": "They sat on the bench in perfect mamihlapinatapai — both about to speak, neither speaking."
+  },
+  {
+    "id": "meraki",
+    "category": "Loanword",
+    "story": "Modern Greek has a word for doing something with your whole self — not just effort or competence, but soul and creative spirit poured entirely into the work. It describes the cook who makes the same dish a hundred times but brings genuine care to each one. English gets close with \"passion\" but misses the element of self left behind in the thing made — the trace of the maker that remains in what they made.",
+    "answer": "Meraki",
+    "distractors": ["Ikigai", "Sisu", "Kefi"],
+    "example": "She cooked with meraki — every meal slightly different, always tasting of attention."
+  },
+  {
+    "id": "weltanschauung",
+    "category": "Loanword",
+    "story": "German philosophy needed a word for something broader than an opinion and deeper than a belief system: the entire framework through which a person perceives reality — their assumptions about the nature of the world, what matters, what's possible, what people are. \"Welt\" means world; \"anschauung\" means view. English has \"worldview\" as a translation, but philosophers still reach for the German when they need the precision of the original.",
+    "answer": "Weltanschauung",
+    "distractors": ["Zeitgeist", "Weltschmerz", "Gestalt"],
+    "example": "They didn't just disagree about policy — their entire Weltanschauung was incompatible."
+  },
+  {
+    "id": "ennui",
+    "category": "Loanword",
+    "story": "French literature of the 18th and 19th centuries was preoccupied with a particular species of suffering: not grief, not depression, but a profound weariness with existence itself — a sense that nothing offers meaning and no experience can fill the void. English has \"boredom,\" but boredom implies something temporary and fixable. The French word implies something more structural: a dissatisfaction with the very nature of being alive.",
+    "answer": "Ennui",
+    "distractors": ["Malaise", "Acedia", "Languor"],
+    "example": "It wasn't sadness exactly — more a creeping ennui that made even good things feel distant and grey."
+  },
+  {
+    "id": "zeitgeist",
+    "category": "Loanword",
+    "story": "German has a word for the defining spirit of a historical moment — the cluster of ideas, anxieties, tastes, and assumptions that make one era feel entirely unlike another. \"Zeit\" is time; \"Geist\" is spirit or ghost. Hegel used it to describe the invisible force that shaped how an entire generation understood the world. You can point to individual events, but the Zeitgeist is the thing they all express. English borrowed it because nothing else came close.",
+    "answer": "Zeitgeist",
+    "distractors": ["Weltanschauung", "Leitmotif", "Gemütlichkeit"],
+    "example": "The show didn't just capture the zeitgeist — it defined it, for people who hadn't yet found words for what they felt."
+  },
+  {
+    "id": "flaneur",
+    "category": "Loanword",
+    "story": "19th-century Paris produced a particular type — someone who wandered the new boulevards with no destination, observing everything with detached aesthetic attention. Not lost and not purposeless: the flâneur moved through the city as a connoisseur of it, alive to its textures, types, and moments. Baudelaire made the concept famous; Walter Benjamin made it philosophical. English has \"stroller,\" \"wanderer,\" \"people-watcher\" — none of which come close.",
+    "answer": "Flâneur",
+    "distractors": ["Boulevardier", "Dandy", "Voyageur"],
+    "example": "He spent Sunday mornings as a flâneur — no headphones, no destination, just the city doing what cities do."
+  },
+  {
+    "id": "angst",
+    "category": "Loanword",
+    "story": "The Danish philosopher Søren Kierkegaard used \"Angest\" to describe something fundamental to human experience: not fear of anything specific, but the vertigo of freedom itself — the anxiety that comes from having infinite choices and no external authority to determine the right one. German psychology picked up the concept; it entered English in the 20th century, where it gradually softened from an existential condition into a synonym for teenage discomfort.",
+    "answer": "Angst",
+    "distractors": ["Ennui", "Weltschmerz", "Unheimlich"],
+    "example": "His teenage journals were pure angst — large questions, small evidence, enormous certainty."
+  },
+  {
+    "id": "under-the-weather",
+    "category": "Idiom",
+    "story": "On sailing ships, when a crew member became sick, they were sent below deck to recover — out of the wind and spray that might worsen their condition. \"Below deck\" meant beneath the weather deck, the upper deck fully exposed to the elements. The sick sailor was literally under the weather: physically beneath it, removed from the world above. The phrase stayed in the language long after most people stopped living at sea.",
+    "answer": "Under the weather",
+    "distractors": ["Off colour", "Out of sorts", "Under the gun"],
+    "example": "She called in under the weather, which everyone understood meant she needed a day, not that she was actually sick."
+  },
+  {
+    "id": "butter-someone-up",
+    "category": "Idiom",
+    "story": "In ancient India, it was common practice to throw balls of clarified butter — ghee — at statues of the gods as an act of reverence and supplication. The offering was meant to soften divine displeasure, to make the deity more favorable toward the person presenting it. The gesture traveled with trade routes and took on a metaphorical meaning: coating someone in something smooth and rich in hopes of winning their favor.",
+    "answer": "Butter someone up",
+    "distractors": ["Grease someone's palm", "Sweet-talk", "Soft-soap"],
+    "example": "He spent twenty minutes buttering up the maître d' before admitting he didn't have a reservation."
+  },
+  {
+    "id": "crocodile-tears",
+    "category": "Idiom",
+    "story": "Ancient Greek and Roman naturalists, and later medieval writers, described a remarkable behavior in crocodiles: the animals were said to weep while eating their prey. The tears, they wrote, were not grief but a byproduct of digestion. Whether observed or imagined, the image of a predator crying while consuming its victim became a lasting metaphor for performed sorrow that masks real aggression or indifference beneath a convincing surface.",
+    "answer": "Crocodile tears",
+    "distractors": ["Waterworks", "Playing the victim", "Putting on a show"],
+    "example": "He cried at the termination meeting — crocodile tears, she thought, from the man who'd written the memo."
+  },
+  {
+    "id": "let-the-cat-out-of-the-bag",
+    "category": "Idiom",
+    "story": "At medieval markets, merchants would sometimes sell a piglet in a tied bag — a \"pig in a poke.\" The trick was to substitute a cat for the pig before the buyer could inspect it. A suspicious buyer who opened the bag — or an honest merchant who refused the switch — would let the cat out, revealing the deception. Two idioms from one transaction: \"pig in a poke\" and this one, used ever since for any secret that escapes too soon.",
+    "answer": "Let the cat out of the bag",
+    "distractors": ["Spill the beans", "Blow the whistle", "Open the kimono"],
+    "example": "She hadn't meant to let the cat out of the bag about the reorg — it just slipped out during the all-hands."
+  },
+  {
+    "id": "kick-the-bucket",
+    "category": "Idiom",
+    "story": "The origins of this phrase are genuinely disputed — which is itself interesting. One credible theory: in slaughterhouses, a \"bucket\" was a wooden beam or yoke (from the Old French \"buquet\") from which slaughtered animals were hung. As the animal died, it would thrash against the beam. The uncertainty makes it one of the rare idioms whose story is the story of how language forgets its own past.",
+    "answer": "Kick the bucket",
+    "distractors": ["Buy the farm", "Push up daisies", "Cash in your chips"],
+    "example": "His grandfather had kicked the bucket at 94, still arguing, which everyone agreed was exactly right for him."
+  },
+  {
+    "id": "caught-red-handed",
+    "category": "Idiom",
+    "story": "The phrase comes from old Scottish law, where the evidence required to convict someone of killing another man's animal — a serious crime — was to catch them with the blood still on their hands. \"Red-handed\" meant physically, literally undeniable: you couldn't explain away the blood. The standard of proof was the stain itself. The phrase spread because it named something that happens in non-legal life just as precisely.",
+    "answer": "Caught red-handed",
+    "distractors": ["Caught in the act", "Caught with your hand in the cookie jar", "Caught flat-footed"],
+    "example": "She was caught red-handed with the last slice of birthday cake, fork still raised, candles still smoking."
+  },
+  {
+    "id": "once-in-a-blue-moon",
+    "category": "Idiom",
+    "story": "A \"blue moon\" refers to the second full moon in a single calendar month — a genuinely rare astronomical occurrence, happening roughly every two to three years. The phrase predates this definition and originally just meant something absurd or impossible. The color association may also come from times when smoke or atmospheric dust actually tinted the moon blue — an even rarer and more dramatic sight, reported after major volcanic eruptions.",
+    "answer": "Once in a blue moon",
+    "distractors": ["When pigs fly", "Every now and then", "Till the cows come home"],
+    "example": "They met for dinner once in a blue moon — twice a year if one of them was going through something."
+  },
+  {
+    "id": "on-the-nose",
+    "category": "Idiom",
+    "story": "In the early days of live radio broadcasting, timing was everything — a show running long could knock the entire network's schedule out of alignment. Directors developed a system of hand signals to communicate with hosts through the glass. A finger pointed to the nose meant: you are exactly on time. Not early, not late — precisely on schedule. The precision required to hit it became the phrase for anything exact.",
+    "answer": "On the nose",
+    "distractors": ["Spot on", "Dead on", "Right on the money"],
+    "example": "His estimate had been on the nose — three hours to the minute, as if he'd built the traffic himself."
+  },
+  {
+    "id": "be-yourself",
+    "category": "Aphorism",
+    "story": "This line is widely attributed to Oscar Wilde, though the original source is uncertain — it doesn't appear in his documented writings, and the earliest verified versions come decades after his death. But it circulates with the authority of his name because it sounds exactly like him: advice that presents itself as encouragement and lands as observation. Of course you should be yourself. There is genuinely no alternative.",
+    "answer": "Be yourself; everyone else is already taken",
+    "distractors": ["To thine own self be true", "Know thyself", "The most courageous act is still to think for yourself"],
+    "example": "She'd spent years performing a version of herself for other people, before someone finally reminded her."
+  },
+  {
+    "id": "difficulty-opportunity",
+    "category": "Aphorism",
+    "story": "Albert Einstein spent the 1930s watching Europe slide toward catastrophe — he had fled Germany, had his citizenship stripped, and was rebuilding his career in a foreign country in his fifties. His response to difficulty was characteristically systematic: he looked for what it revealed rather than what it blocked. The line is now printed on motivational posters, which would have probably amused and depressed him in equal measure.",
+    "answer": "In the middle of every difficulty lies opportunity",
+    "distractors": ["Every cloud has a silver lining", "Necessity is the mother of invention", "What doesn't kill you makes you stronger"],
+    "example": "The funding fell through two weeks before launch — in the middle of every difficulty, she told the team, lies opportunity."
+  },
+  {
+    "id": "life-what-happens",
+    "category": "Aphorism",
+    "story": "This line is almost universally attributed to John Lennon, who used a version of it in his 1980 song \"Beautiful Boy.\" But the original appears in a 1957 issue of Reader's Digest, credited to a cartoonist named Allen Saunders. Lennon never credited the source. The line is now so attached to him that the original author has been largely forgotten — which is, in its way, an illustration of the line itself.",
+    "answer": "Life is what happens when you're busy making other plans",
+    "distractors": ["Time you enjoy wasting is not wasted time", "The best time to plant a tree was twenty years ago", "It is not death that a man should fear, but never beginning to live"],
+    "example": "She'd been planning the gap year for three years — life, it turned out, is what happens when you're busy making other plans."
+  },
+  {
+    "id": "measure-of-health",
+    "category": "Aphorism",
+    "story": "Jiddu Krishnamurti was an Indian philosopher who spent his life questioning the assumptions that make conformity feel like wisdom. This line — from his 1956 talks — wasn't an accusation but a careful observation: the metrics we use to evaluate psychological health are products of the cultures that built them. A person who fits seamlessly into a broken system may not be healthy. They may simply be well-adapted to dysfunction.",
+    "answer": "It is no measure of health to be well adjusted to a profoundly sick society",
+    "distractors": ["The definition of insanity is doing the same thing over and over", "Sanity is a cozy lie", "Normal is an illusion — what is normal for the spider is chaos for the fly"],
+    "example": "Her therapist wrote it on a sticky note and handed it across the desk."
+  },
+  {
+    "id": "two-things-infinite",
+    "category": "Aphorism",
+    "story": "The attribution to Einstein is almost certainly apocryphal — it doesn't appear in his published writings, and the earliest source is a 1995 biography. But it circulates with the authority of his name because it sounds exactly like what a man who spent his life measuring the universe might privately think about the second. Whether he said it or not, someone did. And they were right.",
+    "answer": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe",
+    "distractors": ["The difference between genius and stupidity is that genius has its limits", "I am not young enough to know everything", "For every complex problem there is an answer that is clear, simple, and wrong"],
+    "example": "She looked at the comment section and thought, not for the first time, of the observation about the universe and human stupidity."
+  },
+  {
+    "id": "truth-rarely-pure",
+    "category": "Epigram",
+    "story": "Oscar Wilde gave this line to Algernon in The Importance of Being Earnest — a play in which almost every character is lying, hiding something, or pretending to be someone else. Algernon says it with complete confidence, as if it's a settled matter, which in the world of the play it essentially is. The line works because it sounds like wisdom and functions as permission: to complicate, to qualify, to resist easy answers.",
+    "answer": "The truth is rarely pure and never simple",
+    "distractors": ["I can resist everything except temptation", "A cynic knows the price of everything and the value of nothing", "Experience is the name everyone gives to their mistakes"],
+    "example": "He'd asked a simple question and received a forty-minute answer — the truth, she said finally, is rarely pure and never simple."
+  },
+  {
+    "id": "lose-one-parent",
+    "category": "Epigram",
+    "story": "In The Importance of Being Earnest, the formidable Lady Bracknell is interrogating Jack Worthing about his suitability to marry her niece. When he admits he cannot produce his parents — having been found as an infant in a handbag at Victoria Station — she delivers what is perhaps the most devastating line in English comic writing. The joke depends on treating profound loss as a social failure, which is the whole character in one sentence.",
+    "answer": "To lose one parent may be regarded as a misfortune; to lose both looks like carelessness",
+    "distractors": ["The truth is rarely pure and never simple", "I can resist everything except temptation", "All women become like their mothers — that is their tragedy"],
+    "example": "She'd read the line a dozen times and still laughed, despite herself, at Lady Bracknell's appalling priorities."
+  },
+  {
+    "id": "patriotism-last-refuge",
+    "category": "Epigram",
+    "story": "Samuel Johnson said this in 1775, and James Boswell carefully recorded it — noting that Johnson did not mean to condemn genuine love of country, but specifically the kind invoked to silence criticism, end debate, or excuse behavior that would otherwise be indefensible. The line has outlasted its occasion by two and a half centuries because the behavior it describes has not.",
+    "answer": "Patriotism is the last refuge of a scoundrel",
+    "distractors": ["Power tends to corrupt, and absolute power corrupts absolutely", "No man but a blockhead ever wrote except for money", "The first duty of a revolutionary is to get away with it"],
+    "example": "He'd wrapped every policy in a flag and dared anyone to question it."
+  },
+  {
+    "id": "little-learning",
+    "category": "Epigram",
+    "story": "Alexander Pope wrote this in his 1711 \"An Essay on Criticism\" — his image was of drinking from a shallow spring: a sip convinces you that you've tasted the source, when you've barely touched the surface. The line is constantly misquoted as \"a little knowledge,\" which shifts the meaning. Learning implies process; knowledge implies achievement. Pope was writing about the confidence of partial understanding, which is a different and more common danger.",
+    "answer": "A little learning is a dangerous thing",
+    "distractors": ["Knowledge is power", "Education is not the filling of a bucket but the lighting of a fire", "The more I learn, the more I realize how much I don't know"],
+    "example": "He'd read one book on nutrition and was now correcting waitstaff — a little learning is a dangerous thing."
+  },
+  {
+    "id": "know-thyself",
+    "category": "Maxim",
+    "story": "Carved into the stone at the entrance to the Temple of Apollo at Delphi — the most sacred oracle in the ancient Greek world — was a two-word inscription: \"Gnothi seauton.\" Know thyself. It was attributed variously to Socrates, Heraclitus, and Pythagoras, which means no one knows who actually said it. Socrates made it the basis of his philosophy: that wisdom begins not with knowing the world, but with understanding the limits of one's own knowledge.",
+    "answer": "Know thyself",
+    "distractors": ["Love thy neighbor", "Do unto others as you would have them do unto you", "The unexamined life is not worth living"],
+    "example": "Know thyself, the temple said — which was easier advice to carve than to follow."
+  },
+  {
+    "id": "friends-close-enemies-closer",
+    "category": "Maxim",
+    "story": "This is usually attributed to Sun Tzu's \"The Art of War\" — it isn't there. It's attributed to Machiavelli — closer, but not quite. The line in its current form appears in \"The Godfather Part II,\" spoken by Michael Corleone, possibly an elaboration of a Machiavelli passage. It's a maxim whose authority has been borrowed from multiple ancient sources, all of which make it sound older and wiser than it is.",
+    "answer": "Keep your friends close and your enemies closer",
+    "distractors": ["Never interrupt your enemy when he is making a mistake", "Know your enemy and know yourself", "All warfare is based on deception"],
+    "example": "She made a point of lunching with the people who'd voted against her — keep your friends close, as the saying goes."
+  },
+  {
+    "id": "through-hell-keep-going",
+    "category": "Maxim",
+    "story": "This line is attributed to Churchill, though the sourcing is uncertain — like many Churchill quotes, it may be apocryphal, attached to his name because it sounds like him. What is real is the situation it addresses: the specific despair that comes from being in the worst of something without knowing how much worse it gets. The advice is stripped of comfort and useful precisely because it offers none — only direction.",
+    "answer": "If you're going through hell, keep going",
+    "distractors": ["When the going gets tough, the tough get going", "Pain is temporary, quitting is forever", "Fall seven times, stand up eight"],
+    "example": "The third week of the project had broken three of them. She sent the team the Churchill quote and meant it."
+  },
+  {
+    "id": "hanlons-razor",
+    "category": "Maxim",
+    "story": "This principle — Hanlon's Razor — is attributed to Robert J. Hanlon, who submitted it to a book of Murphy's Law jokes in 1980, naming it as a play on Occam's Razor. The principle itself is older — similar formulations appear in Napoleon and Goethe — but the specific phrasing stuck. It counsels humility in assigning blame: most bad outcomes have incompetence at their root, not conspiracy. This is either reassuring or more alarming, depending on the day.",
+    "answer": "Never attribute to malice what can be adequately explained by stupidity",
+    "distractors": ["Occam's Razor", "Hitchens's Razor", "Murphy's Law"],
+    "example": "She'd assumed the delay was deliberate — then remembered Hanlon's Razor and reconsidered."
+  },
+  {
+    "id": "pen-mightier-sword",
+    "category": "Proverb",
+    "story": "The exact phrase was coined by the novelist Edward Bulwer-Lytton in 1839 — in a play about Cardinal Richelieu, the ruthless political architect of 17th century France. Richelieu says it while explaining why words, laws, and documents hold more lasting power than military force. The irony that Richelieu — who used both weapons and manipulation with equal facility — is the character who delivers it was almost certainly intentional.",
+    "answer": "The pen is mightier than the sword",
+    "distractors": ["Actions speak louder than words", "Talk is cheap", "The squeaky wheel gets the grease"],
+    "example": "The memoir had done more damage to his reputation than any lawsuit could have — the pen, as always, mightier than the sword."
+  },
+  {
+    "id": "when-in-rome",
+    "category": "Proverb",
+    "story": "Saint Augustine, newly arrived in Milan in the 4th century, wrote to Saint Ambrose with a practical question: in Milan, Christians fasted on Saturday; in Rome, they didn't. Which practice should he follow? Ambrose replied with the principle in its original form: when he was in Rome, he fasted on Saturday; when in Milan, he didn't. Follow the local custom. The advice was logistical before it became philosophical.",
+    "answer": "When in Rome, do as the Romans do",
+    "distractors": ["A stitch in time saves nine", "Don't count your chickens before they hatch", "Don't look a gift horse in the mouth"],
+    "example": "She ordered the local fish, struggled through it politely — when in Rome."
+  },
+  {
+    "id": "fortune-favors-bold",
+    "category": "Adage",
+    "story": "\"Audentes fortuna iuvat\" appears in Virgil's Aeneid, spoken just before a character's death in battle — which gives it an uncomfortable double meaning. It also appears in Pliny the Elder, who said it as he sailed toward the eruption of Vesuvius to help stranded friends and conduct observations. He did not survive. The Romans loved the phrase. They used it before battles, voyages, and business ventures. Their track record was mixed.",
+    "answer": "Fortune favors the bold",
+    "distractors": ["God helps those who help themselves", "The early bird catches the worm", "He who hesitates is lost"],
+    "example": "She submitted the application without reading the eligibility requirements — fortune favors the bold, she told herself, which was one way to frame it."
+  },
+  {
+    "id": "silver-lining",
+    "category": "Adage",
+    "story": "The image comes from John Milton's 1634 masque \"Comus\" — a character lost in darkness notices that the clouds obscuring the moon still have bright edges where the light breaks through. Milton didn't create the adage; he created the image. It took two more centuries of quotation and adaptation for the line to become a stand-alone saying, stripped of its context and polished into the reassurance we now reach for automatically, often in situations where it isn't quite true.",
+    "answer": "Every cloud has a silver lining",
+    "distractors": ["It's always darkest before the dawn", "Into each life some rain must fall", "This too shall pass"],
+    "example": "She hated when people said it to her — every cloud — but later admitted the delay had been exactly what the project needed."
   }
 ]
