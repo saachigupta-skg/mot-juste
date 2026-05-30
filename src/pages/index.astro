@@ -1,6 +1,8 @@
 ---
 import Quiz from '../components/Quiz';
 import BingoBoard from '../components/BingoBoard';
+import AuthWidget from '../components/AuthWidget';
+import AboutToggle from '../components/AboutToggle';
 import '../styles/global.css';
 ---
 
@@ -41,7 +43,10 @@ import '../styles/global.css';
             <p class="challenge-text">
               <a href="#" id="share-link" class="challenge-link">Challenge someone.</a>
             </p>
+            <AuthWidget client:load />
           </div>
+
+          <AboutToggle client:load />
         </div>
       </div>
 

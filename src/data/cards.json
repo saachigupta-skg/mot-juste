@@ -28,7 +28,7 @@
     "category": "Euphemism",
     "story": "Military planners in the 20th century needed language that could acknowledge the deaths of civilians in wartime without making them the grammatical subject of the sentence. The phrase they landed on treated human lives as an incidental byproduct of an operation — passive, technical, and almost entirely stripped of human weight.",
     "answer": "Collateral damage",
-    "distractors": ["Friendly fire", "Strategic withdrawal", "Acceptable loss"],
+    "distractors": ["Strategic withdrawal", "Acceptable loss", "Enhanced interrogation"],
     "example": "The report listed the destroyed homes as collateral damage, as if the families inside were an afterthought."
   },
   {
@@ -78,5 +78,205 @@
     "answer": "Spill the beans",
     "distractors": ["Let the cat out of the bag", "Blow the whistle", "Open the kimono"],
     "example": "She hadn't meant to spill the beans about the surprise party, but she was a terrible liar."
+  },
+  {
+    "id": "mad-as-a-hatter",
+    "category": "Idiom",
+    "story": "In 18th and 19th century England, hatmakers used mercury nitrate to cure felt. Day after day, absorbed through their skin and lungs, the mercury accumulated in their bodies. The symptoms were neurological: trembling, slurred speech, personality changes, hallucinations. The hatters weren't figures of whimsy. They were poisoned workers.",
+    "answer": "Mad as a hatter",
+    "distractors": ["Barking mad", "Off his rocker", "Loose cannon"],
+    "example": "After three consecutive all-nighters, she was completely mad as a hatter — talking to her plants, forgetting her own address."
+  },
+  {
+    "id": "turning-a-blind-eye",
+    "category": "Idiom",
+    "story": "At the Battle of Copenhagen in 1801, British Admiral Horatio Nelson received a signal flag from his superior ordering him to withdraw from a battle he was winning. Nelson held his telescope to his blind eye — he had lost sight in one eye years earlier — and announced that he could not see the signal. He continued the attack and won.",
+    "answer": "Turn a blind eye",
+    "distractors": ["Look the other way", "Sweep it under the rug", "Pull the wool over your eyes"],
+    "example": "The manager turned a blind eye to the expense reports, and everyone knew it."
+  },
+  {
+    "id": "steal-someones-thunder",
+    "category": "Idiom",
+    "story": "In 1704, the playwright John Dennis invented a machine that simulated thunder by rattling a sheet of metal — a genuine theatrical innovation. His play failed and closed quickly. Weeks later, Dennis attended a production of Macbeth at the same theatre and heard, to his fury, the exact sound from backstage. He reportedly stood up and shouted: \"Damn them! They will not let my play run, but they steal my thunder!\"",
+    "answer": "Steal someone's thunder",
+    "distractors": ["Rain on your parade", "Take the wind out of your sails", "Upstage"],
+    "example": "She'd been about to announce her promotion when her sister revealed her pregnancy — completely stealing her thunder."
+  },
+  {
+    "id": "pass-the-buck",
+    "category": "Idiom",
+    "story": "In 19th century American poker, players took turns dealing — but some wanted to avoid the responsibility. To mark whose turn it was, a knife with a buckhorn handle was placed in front of the dealer. When your turn came, you could slide the marker to someone else. Harry Truman, who famously refused to do this as president, kept a sign on his desk that read: \"The Buck Stops Here.\"",
+    "answer": "Pass the buck",
+    "distractors": ["Kick the can down the road", "Wash your hands of it", "Point the finger"],
+    "example": "Every department passed the buck until nobody was responsible for anything."
+  },
+  {
+    "id": "break-a-leg",
+    "category": "Idiom",
+    "story": "The theatre world has long held that wishing a performer \"good luck\" was itself bad luck — a superstition so ingrained that actors avoided the phrase entirely. The workaround was to say the opposite of what you meant: wishing misfortune as a disguised blessing. Some trace it further: a successful show meant bowing so many times you'd \"break\" the leg you bent at the knee.",
+    "answer": "Break a leg",
+    "distractors": ["Knock 'em dead", "Bite your tongue", "Cross your fingers"],
+    "example": "She texted the cast on opening night: break a leg — and meant every word of it."
+  },
+  {
+    "id": "gift-horse",
+    "category": "Idiom",
+    "story": "You can determine a horse's age — and therefore its value — by examining its teeth. Longer, more worn teeth mean an older, less valuable animal. This was common knowledge in any era when horses were bought and sold. Checking the teeth of a gifted horse was a pointed way of calculating whether it was worth enough. The etiquette was clear: you didn't do it.",
+    "answer": "Don't look a gift horse in the mouth",
+    "distractors": ["Beggars can't be choosers", "Never bite the hand that feeds you", "Take it or leave it"],
+    "example": "The old laptop wasn't ideal, but her uncle had given it for free — don't look a gift horse in the mouth."
+  },
+  {
+    "id": "well-behaved-women",
+    "category": "Aphorism",
+    "story": "In 1976, the historian Laurel Thatcher Ulrich published an academic paper about the virtues praised in Puritan women's obituaries. She noted, almost in passing, that such women left almost no trace in the historical record. The observation was buried in a footnote. Fifteen years later, someone put it on a bumper sticker. It eventually sold over a million of them.",
+    "answer": "Well-behaved women seldom make history",
+    "distractors": ["Behind every great man is a great woman", "Hell hath no fury like a woman scorned", "Women hold up half the sky"],
+    "example": "She quoted it in her valedictorian speech, which her very well-behaved school principal found somewhat alarming."
+  },
+  {
+    "id": "unexamined-life",
+    "category": "Aphorism",
+    "story": "In 399 BCE, Socrates stood trial in Athens for impiety and corrupting the youth. He was 70 years old. When found guilty and given the option to propose his own punishment — exile, silence, a fine — he refused each one on the grounds that stopping his questioning of others would mean abandoning the only thing that made life worth living. He proposed instead that Athens reward him with free meals. They sentenced him to death.",
+    "answer": "The unexamined life is not worth living",
+    "distractors": ["Know thyself", "I think, therefore I am", "The only true wisdom is knowing you know nothing"],
+    "example": "She'd spent fifteen years in a career she never chose — the unexamined life, she thought, finally examining it."
+  },
+  {
+    "id": "never-interrupt-enemy",
+    "category": "Maxim",
+    "story": "Napoleon developed this principle from watching battles lost by commanders who couldn't resist attacking when they should have waited. The instinct to act — to show aggression, to press advantage — often prevented generals from allowing an enemy's mistake to fully destroy itself. Patience, he observed, was itself a weapon. The man who could hold back gained more than the man who charged.",
+    "answer": "Never interrupt your enemy when he is making a mistake",
+    "distractors": ["Keep your friends close and your enemies closer", "All warfare is based on deception", "Patience is a virtue"],
+    "example": "He watched his rival's disastrous presentation unfold without saying a word."
+  },
+  {
+    "id": "occams-razor",
+    "category": "Maxim",
+    "story": "William of Ockham was a 14th-century English friar deeply suspicious of unnecessary complexity in argument. His principle — that among competing explanations, the one with the fewest assumptions should be preferred — was not actually about shaving. The \"razor\" is a philosophical tool for cutting away what isn't needed. He never wrote the principle in quite the form we know it, but his name has been attached to it for seven centuries.",
+    "answer": "Occam's Razor",
+    "distractors": ["Hanlon's Razor", "Hitchens's Razor", "Murphy's Law"],
+    "example": "She applied Occam's Razor: he hadn't texted back because he was busy, not because he was ending things."
+  },
+  {
+    "id": "youth-wasted",
+    "category": "Epigram",
+    "story": "George Bernard Shaw had a gift for reversals — sentences that seem to agree with a conventional sentiment until the last word flips them. This one seems straightforward: youth is wonderful. But the punchline is the implied subject — it's the old, looking back, who understand what they had. The young, by definition, don't yet know what they're spending.",
+    "answer": "Youth is wasted on the young",
+    "distractors": ["Age is just a number", "Old age is not for the faint of heart", "We are always the same age inside"],
+    "example": "He watched his 22-year-old nephew complain about being tired, and thought: youth is wasted on the young."
+  },
+  {
+    "id": "cynic-price-value",
+    "category": "Epigram",
+    "story": "Oscar Wilde put this line in Lady Windermere's Fan, spoken by one society wit to another. The line works as a definition of cynicism — but it also works as self-description, since the person saying it seems to know quite a lot about prices and values. Wilde's best lines have that quality: they indict their speaker as much as their subject.",
+    "answer": "A cynic knows the price of everything and the value of nothing",
+    "distractors": ["The truth is rarely pure and never simple", "Experience is the name everyone gives to their mistakes", "To lose one parent is misfortune; to lose both looks like carelessness"],
+    "example": "He reviewed every restaurant by cost-per-calorie. A cynic, she thought — knows the price of everything."
+  },
+  {
+    "id": "count-your-chickens",
+    "category": "Proverb",
+    "story": "In Aesop's fable, a milkmaid carries a pail of milk and begins calculating: the milk will buy eggs, the eggs will hatch, the chicks will become hens, the hens will lay more eggs — and eventually she'll have enough to buy a dress to attract a suitor. In her excitement, she tosses her head. The milk falls. Aesop's fables rarely need interpretation.",
+    "answer": "Don't count your chickens before they hatch",
+    "distractors": ["Don't put all your eggs in one basket", "Hope for the best, prepare for the worst", "Make hay while the sun shines"],
+    "example": "She'd already mentally spent the bonus before the review meeting — don't count your chickens, her mother would have said."
+  },
+  {
+    "id": "saudade",
+    "category": "Loanword",
+    "story": "Portuguese sailors in the Age of Exploration had a word for something they experienced at sea that English had no name for: a deep, bittersweet longing for home, for people already gone, for things that might never return — not quite grief, not quite nostalgia, but somewhere between them. The word traveled with the sailors. Linguists have spent decades arguing about whether it can be translated at all.",
+    "answer": "Saudade",
+    "distractors": ["Nostalgia", "Hiraeth", "Sehnsucht"],
+    "example": "Looking through her mother's letters, she felt saudade — grief for someone still alive, for a version of her already gone."
+  },
+  {
+    "id": "wabi-sabi",
+    "category": "Loanword",
+    "story": "Japanese aesthetic philosophy has a concept rooted in Zen Buddhism for which English has no equivalent: the beauty found in imperfection, incompleteness, and the passage of time. A cracked ceramic bowl repaired with gold. A moss-covered stone. A face with lines. The idea runs directly counter to the Western instinct toward perfection — that what wears, what ages, what shows its history, is more beautiful for it.",
+    "answer": "Wabi-sabi",
+    "distractors": ["Mono no aware", "Kintsugi", "Ikigai"],
+    "example": "She stopped trying to restore the farmhouse to its original state and embraced its wabi-sabi instead."
+  },
+  {
+    "id": "esprit-de-lescalier",
+    "category": "Loanword",
+    "story": "The 18th-century French philosopher Denis Diderot noticed something that had no name: the perfect witty comeback that arrives only after you've left the room, while you're descending the staircase on your way out. Sharp, devastating, elegant — and entirely too late. The French named it. English never bothered.",
+    "answer": "L'esprit de l'escalier",
+    "distractors": ["Joie de vivre", "Raison d'être", "Coup de grâce"],
+    "example": "Driving home, the perfect reply finally came to her — pure l'esprit de l'escalier."
+  },
+  {
+    "id": "fernweh",
+    "category": "Loanword",
+    "story": "German has a word that is the precise opposite of homesickness: an ache not for where you came from, but for places you've never been — a longing for distance, for elsewhere, for the world beyond the horizon. Wanderlust comes close but suggests action. This one is the ache before you go.",
+    "answer": "Fernweh",
+    "distractors": ["Wanderlust", "Heimweh", "Sehnsucht"],
+    "example": "She stared at the flight map on her phone for an hour — not planning anything, just feeling the fernweh."
+  },
+  {
+    "id": "hygge",
+    "category": "Loanword",
+    "story": "Danish and Norwegian cultures developed a word for a specific quality of comfort — not luxury, not mere coziness, but the warmth found in good company, candlelight, simple food, and the deliberate decision to be present. It became internationally known when the rest of the world, scrolling through their phones in darkened rooms, realized they had the feeling but had never named it.",
+    "answer": "Hygge",
+    "distractors": ["Lagom", "Friluftsliv", "Gemütlichkeit"],
+    "example": "They didn't do anything remarkable — just candles, soup, an old film — but it was pure hygge."
+  },
+  {
+    "id": "friendly-fire",
+    "category": "Euphemism",
+    "story": "Military planners needed a term for one of war's most disorienting tragedies: soldiers killed not by the enemy but by their own side — through misidentification, miscommunication, or the chaos of battle. The phrase that entered use described these deaths as \"friendly.\" The deaths are identical. Only the paperwork differs.",
+    "answer": "Friendly fire",
+    "distractors": ["Strategic withdrawal", "Neutralized", "Acceptable loss"],
+    "example": "The report classified it as friendly fire, a phrase that managed to make the worst possible outcome sound almost accidental."
+  },
+  {
+    "id": "laconic",
+    "category": "Mot Juste",
+    "story": "Philip II of Macedon — father of Alexander the Great — had conquered most of Greece. Flush with victories, he sent a message to the city-state of Sparta: \"If I enter Laconia, I will raze Sparta to the ground.\" The Spartans deliberated and sent back their reply. It was a single word. Philip did not invade.",
+    "answer": "Laconic",
+    "distractors": ["Terse", "Curt", "Brusque"],
+    "example": "Her laconic 'fine' told him everything — none of it was fine."
+  },
+  {
+    "id": "draconian",
+    "category": "Mot Juste",
+    "story": "In 7th century BCE Athens, a lawmaker named Draco was commissioned to write the city's first written legal code. He took the assignment seriously. Under his code, nearly every offense — theft, idleness, stealing a cabbage — was punishable by death. When asked why, he reportedly said that minor crimes deserved it, and he had no harsher penalty available for greater ones.",
+    "answer": "Draconian",
+    "distractors": ["Authoritarian", "Punitive", "Tyrannical"],
+    "example": "The school's draconian attendance policy treated a single absence like a capital offense."
+  },
+  {
+    "id": "boycott",
+    "category": "Mot Juste",
+    "story": "In 1880 County Mayo, Ireland, a land agent named Captain Charles Boycott was so cruel to tenant farmers — evicting them, refusing fair rents — that the local community decided not to fight him directly. Instead, they simply refused to interact with him at all. His crops rotted. Shops wouldn't serve him. Workers wouldn't work for him. Within a year, his name had become a verb.",
+    "answer": "Boycott",
+    "distractors": ["Embargo", "Sanction", "Strike"],
+    "example": "Students organized a boycott of the dining hall until the administration restored vegan options."
+  },
+  {
+    "id": "serendipity",
+    "category": "Mot Juste",
+    "story": "In 1754, the writer Horace Walpole coined a new word in a letter, explaining exactly where it came from: a Persian fairy tale called \"The Three Princes of Serendip\" — the old name for Sri Lanka — in which the heroes were always making fortunate discoveries by accident. Walpole needed a word for that faculty: the gift of stumbling into exactly the right thing. He invented one, and it stuck.",
+    "answer": "Serendipity",
+    "distractors": ["Fortuitous", "Providence", "Happenstance"],
+    "example": "Finding the apartment had been pure serendipity — she'd taken a wrong turn on the way to a viewing she'd already decided to skip."
+  },
+  {
+    "id": "sardonic",
+    "category": "Mot Juste",
+    "story": "Ancient Greek and Roman writers described a plant native to Sardinia that, when eaten, caused the facial muscles to contract into a grotesque grin — while simultaneously killing the person who had eaten it. The smile came not from happiness but from convulsion. Over centuries, the island's name became attached to any laughter that masks contempt or bitterness beneath it.",
+    "answer": "Sardonic",
+    "distractors": ["Sarcastic", "Wry", "Caustic"],
+    "example": "He gave a sardonic smile when they announced the 'voluntary' overtime — they both knew what it meant."
+  },
+  {
+    "id": "pyrrhic-victory",
+    "category": "Mot Juste",
+    "story": "In 279 BCE, King Pyrrhus of Epirus defeated the Romans at the Battle of Asculum, but his losses were catastrophic. His best officers were dead. His veteran soldiers — men who couldn't be replaced — were gone. When congratulated on his victory, Pyrrhus reportedly replied: \"One more such victory and I am undone.\" He had won so thoroughly that he had destroyed his own ability to win the war.",
+    "answer": "Pyrrhic victory",
+    "distractors": ["Hollow victory", "Own goal", "Winning the battle, losing the war"],
+    "example": "Getting the promotion meant relocating her entire family — a Pyrrhic victory she wasn't sure she wanted."
   }
 ]

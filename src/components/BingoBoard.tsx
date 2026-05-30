@@ -6,6 +6,7 @@ const CATEGORIES = [
   ['Loanword', 'Epigram', 'Euphemism'],
 ];
 
+// Muted dot colors for unearned cells
 const CATEGORY_COLORS: Record<string, string> = {
   'Adage': '#7a6e5f',
   'Proverb': '#5f7a6e',
@@ -18,6 +19,19 @@ const CATEGORY_COLORS: Record<string, string> = {
   'Euphemism': '#7a5f5f',
 };
 
+// Vibrant fill colors when a square is earned
+const EARNED_COLORS: Record<string, string> = {
+  'Adage': '#b8874a',
+  'Proverb': '#3d8c72',
+  'Aphorism': '#7a5aaa',
+  'Idiom': '#c07040',
+  'Mot Juste': '#b88b18',
+  'Maxim': '#3d6e9e',
+  'Loanword': '#a04878',
+  'Epigram': '#4d8c48',
+  'Euphemism': '#a85858',
+};
+
 const STORAGE_KEY = 'motjuste_earned_categories';
 
 interface BingoBoardProps {
@@ -26,6 +40,7 @@ interface BingoBoardProps {
 
 export default function BingoBoard({ newlyEarned = [] }: BingoBoardProps) {
   const [earned, setEarned] = useState<Set<string>>(new Set());
+  const [popping, setPopping] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     try {
@@ -46,6 +61,9 @@ export default function BingoBoard({ newlyEarned = [] }: BingoBoardProps) {
       } catch {}
       return next;
     });
+    setPopping(new Set(newlyEarned));
+    const t = setTimeout(() => setPopping(new Set()), 600);
+    return () => clearTimeout(t);
   }, [newlyEarned]);
 
   const allEarned = CATEGORIES.flat().every(c => earned.has(c));
@@ -63,40 +81,31 @@ export default function BingoBoard({ newlyEarned = [] }: BingoBoardProps) {
       >
         {CATEGORIES.flat().map(category => {
           const isEarned = earned.has(category);
-          const color = CATEGORY_COLORS[category] ?? '#8a7560';
+          const dotColor = CATEGORY_COLORS[category] ?? '#8a7560';
+          const earnedBg = EARNED_COLORS[category] ?? '#b88b18';
+          const isNew = popping.has(category);
           return (
             <div
               key={category}
-              className={`bingo-cell${isEarned ? ' bingo-cell--earned' : ''}`}
-              style={{ padding: '0.6rem 0.25rem' }}
+              className={`bingo-cell${isEarned ? ' bingo-cell--earned' : ''}${isNew ? ' bingo-cell--new' : ''}`}
+              style={{
+                padding: '0.6rem 0.25rem',
+                backgroundColor: isEarned ? earnedBg : undefined,
+              }}
             >
-              {isEarned && (
-                <div
-                  style={{
-                    width: '6px',
-                    height: '6px',
-                    borderRadius: '50%',
-                    backgroundColor: isEarned ? '#1a1208' : color,
-                    marginBottom: '0.2rem',
-                    opacity: isEarned ? 0.5 : 0.6,
-                  }}
-                />
-              )}
-              {!isEarned && (
-                <div
-                  style={{
-                    width: '6px',
-                    height: '6px',
-                    borderRadius: '50%',
-                    backgroundColor: color,
-                    marginBottom: '0.2rem',
-                    opacity: 0.5,
-                  }}
-                />
-              )}
+              <div
+                style={{
+                  width: '6px',
+                  height: '6px',
+                  borderRadius: '50%',
+                  backgroundColor: isEarned ? 'rgba(255,255,255,0.6)' : dotColor,
+                  marginBottom: '0.2rem',
+                  opacity: isEarned ? 1 : 0.5,
+                }}
+              />
               <span
                 className="bingo-cell__name"
-                style={{ color: isEarned ? '#1a1208' : '#9a8f80', opacity: isEarned ? 1 : 0.7 }}
+                style={{ color: isEarned ? '#fff' : '#3d3020' }}
               >
                 {category}
               </span>

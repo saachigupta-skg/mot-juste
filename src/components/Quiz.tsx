@@ -4,6 +4,7 @@ import CategoryBadge from './CategoryBadge';
 import RevealCard from './RevealCard';
 import BingoBoard from './BingoBoard';
 import cardsData from '../data/cards.json';
+import { supabase, loadProgress, saveProgress } from '../lib/supabase';
 
 interface Card {
   id: string;
@@ -116,6 +117,21 @@ export default function Quiz() {
         setEarnedCategories(new Set(JSON.parse(stored)));
       }
     } catch {}
+
+    // Merge Supabase progress (if logged in) with localStorage
+    loadProgress().then(remote => {
+      if (!remote) return;
+      setEarnedCategories(prev => {
+        const merged = new Set([...prev, ...remote.earned_categories]);
+        try { localStorage.setItem(STORAGE_KEY_EARNED, JSON.stringify([...merged])); } catch {}
+        return merged;
+      });
+      setStreak(prev => {
+        const merged = Math.max(prev, remote.streak);
+        try { localStorage.setItem(STORAGE_KEY_STREAK, String(merged)); } catch {}
+        return merged;
+      });
+    });
   }, []);
 
   const addToast = useCallback((message: string) => {
@@ -153,6 +169,9 @@ export default function Quiz() {
         try {
           localStorage.setItem(STORAGE_KEY_EARNED, JSON.stringify([...next]));
         } catch {}
+        // Sync to Supabase
+        const today = new Date().toISOString().split('T')[0];
+        saveProgress({ earned_categories: [...next], streak, last_played: today });
       }
     }
 
@@ -167,6 +186,9 @@ export default function Quiz() {
       const newStreak = updateStreak();
       setStreak(newStreak);
       setPhase('summary');
+      // Sync streak to Supabase
+      const today = new Date().toISOString().split('T')[0];
+      saveProgress({ earned_categories: [...earnedCategories], streak: newStreak, last_played: today });
       return;
     }
     const nextIndex = cardIndex + 1;
