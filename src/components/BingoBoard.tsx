@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const CATEGORIES = [
   ['Adage', 'Proverb', 'Aphorism'],
@@ -17,6 +17,18 @@ const CATEGORY_COLORS: Record<string, string> = {
   'Loanword': '#7a5f6a',
   'Epigram': '#6a7a5f',
   'Euphemism': '#7a5f5f',
+};
+
+const DEFINITIONS: Record<string, string> = {
+  'Adage': 'A short, widely known saying that expresses a general truth.',
+  'Proverb': 'A brief popular saying offering practical wisdom.',
+  'Aphorism': 'A pithy observation that contains a general truth.',
+  'Idiom': 'A phrase whose meaning can\'t be deduced from its literal words.',
+  'Mot Juste': 'The exact right word for a situation — no more, no less.',
+  'Maxim': 'A short statement expressing a general rule of conduct.',
+  'Loanword': 'A word adopted from another language with little modification.',
+  'Epigram': 'A witty, concise remark or poem.',
+  'Euphemism': 'A mild or indirect word used in place of a blunt one.',
 };
 
 // Vibrant fill colors when a square is earned
@@ -67,6 +79,7 @@ export default function BingoBoard({ newlyEarned = [] }: BingoBoardProps) {
   }, [newlyEarned]);
 
   const allEarned = CATEGORIES.flat().every(c => earned.has(c));
+  const [hovered, setHovered] = useState<string | null>(null);
 
   return (
     <div>
@@ -84,6 +97,8 @@ export default function BingoBoard({ newlyEarned = [] }: BingoBoardProps) {
           const dotColor = CATEGORY_COLORS[category] ?? '#8a7560';
           const earnedBg = EARNED_COLORS[category] ?? '#b88b18';
           const isNew = popping.has(category);
+          const isHovered = hovered === category;
+          const definition = DEFINITIONS[category];
           return (
             <div
               key={category}
@@ -91,7 +106,11 @@ export default function BingoBoard({ newlyEarned = [] }: BingoBoardProps) {
               style={{
                 padding: '0.6rem 0.25rem',
                 backgroundColor: isEarned ? earnedBg : undefined,
+                position: 'relative',
+                cursor: 'default',
               }}
+              onMouseEnter={() => setHovered(category)}
+              onMouseLeave={() => setHovered(null)}
             >
               <div
                 style={{
@@ -109,6 +128,29 @@ export default function BingoBoard({ newlyEarned = [] }: BingoBoardProps) {
               >
                 {category}
               </span>
+              {isHovered && definition && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    bottom: 'calc(100% + 6px)',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    backgroundColor: '#1a1208',
+                    color: '#f7f3eb',
+                    fontFamily: '"EB Garamond", serif',
+                    fontSize: '0.78rem',
+                    lineHeight: '1.5',
+                    padding: '0.4rem 0.6rem',
+                    width: '140px',
+                    textAlign: 'center',
+                    zIndex: 20,
+                    pointerEvents: 'none',
+                    fontStyle: 'italic',
+                  }}
+                >
+                  {definition}
+                </div>
+              )}
             </div>
           );
         })}
