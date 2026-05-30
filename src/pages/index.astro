@@ -1,0 +1,220 @@
+---
+import Quiz from '../components/Quiz';
+import BingoBoard from '../components/BingoBoard';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A vocabulary quiz that teaches adages, idioms, aphorisms, and more through origin stories." />
+    <title>Mot Juste</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <main id="app">
+      <div id="home" class="screen">
+        <div class="page-wrap">
+          <!-- Wordmark -->
+          <header class="wordmark-block">
+            <h1 class="wordmark">Mot Juste</h1>
+            <p class="tagline">Find the exact right word.</p>
+          </header>
+
+          <!-- Streak (populated by client) -->
+          <div id="streak-display" class="streak-display" style="display:none;">
+            <span id="streak-text"></span>
+          </div>
+
+          <!-- Bingo board -->
+          <div class="bingo-section">
+            <BingoBoard client:load />
+          </div>
+
+          <!-- Play button -->
+          <div class="play-section">
+            <button id="begin-btn" class="begin-btn" type="button">
+              Begin
+            </button>
+            <p class="challenge-text">
+              <a href="#" id="share-link" class="challenge-link">Challenge someone.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quiz screen -->
+      <div id="quiz-screen" class="screen" style="display:none;">
+        <div class="page-wrap">
+          <Quiz client:only="react" />
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // Streak display on home
+      function numberToWords(n: number): string {
+        const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+        if (n < words.length) return words[n];
+        return String(n);
+      }
+
+      function initStreak() {
+        try {
+          const stored = localStorage.getItem('motjuste_streak');
+          const count = stored ? parseInt(stored, 10) : 0;
+          if (count > 0) {
+            const label = `${numberToWords(count).charAt(0).toUpperCase()}${numberToWords(count).slice(1)} ${count === 1 ? 'day' : 'days'} running.`;
+            const el = document.getElementById('streak-text');
+            const container = document.getElementById('streak-display');
+            if (el && container) {
+              el.textContent = label;
+              container.style.display = 'block';
+            }
+          }
+        } catch {}
+      }
+
+      function initBeginButton() {
+        const btn = document.getElementById('begin-btn');
+        const home = document.getElementById('home');
+        const quizScreen = document.getElementById('quiz-screen');
+        if (btn && home && quizScreen) {
+          btn.addEventListener('click', () => {
+            home.style.display = 'none';
+            quizScreen.style.display = 'block';
+          });
+        }
+      }
+
+      function initShareLink() {
+        const link = document.getElementById('share-link');
+        if (link) {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const text = 'Try Mot Juste — a vocabulary quiz for adages, idioms, and more.\nhttps://motjuste.saachigupta.net';
+            if (navigator.share) {
+              navigator.share({ text }).catch(() => {});
+            } else {
+              navigator.clipboard.writeText(text).catch(() => {});
+            }
+          });
+        }
+      }
+
+      initStreak();
+      initBeginButton();
+      initShareLink();
+    </script>
+  </body>
+</html>
+
+<style>
+  .page-wrap {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .screen {
+    width: 100%;
+  }
+
+  .wordmark-block {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .wordmark {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 400;
+    color: #1a1208;
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+
+  .tagline {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: #8a7560;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .streak-display {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  #streak-text {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: #8a7560;
+  }
+
+  .bingo-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .play-section {
+    text-align: center;
+  }
+
+  .begin-btn {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 1rem;
+    padding: 0.85rem 1rem;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+    color: #f7f3eb;
+    background-color: #1a1208;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 400ms ease-out;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .begin-btn:hover {
+    background-color: #b85c38;
+  }
+
+  .challenge-text {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.75rem;
+    color: #8a7560;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .challenge-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #cfc6b5;
+    transition: color 300ms ease-out, border-color 300ms ease-out;
+  }
+
+  .challenge-link:hover {
+    color: #1a1208;
+    border-bottom-color: #8a7560;
+  }
+
+  @media (max-width: 480px) {
+    .page-wrap {
+      padding: 2rem 1.25rem 3rem;
+    }
+  }
+</style>

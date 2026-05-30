@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bite-the-bullet",
+    "category": "Idiom",
+    "story": "During the American Civil War, battlefield surgeons operated without anesthesia. Patients faced procedures that would cause them to writhe and scream. To keep them from biting their tongues — and to give them something to bear down on — surgeons handed them a lead bullet to clench between their teeth. Enduring the unbearable was simply the only option.",
+    "answer": "Bite the bullet",
+    "distractors": ["Hard pill to swallow", "Take the heat", "Grit your teeth"],
+    "example": "She hated confrontation, but finally bit the bullet and called her landlord."
+  },
+  {
+    "id": "power-corrupts",
+    "category": "Aphorism",
+    "story": "In 1887, the historian Lord Acton was in a letter dispute with a bishop over whether powerful figures in church history should be judged by the same moral standards as anyone else. The bishop argued they should be excused by virtue of their office. Acton disagreed, and in his reply he articulated something he had observed across all of history.",
+    "answer": "Power tends to corrupt, and absolute power corrupts absolutely",
+    "distractors": ["The ends justify the means", "Noblesse oblige", "With great power comes great responsibility"],
+    "example": "He'd watched three principals come and go — power tends to corrupt, and that office seemed to accelerate it."
+  },
+  {
+    "id": "schadenfreude",
+    "category": "Loanword",
+    "story": "German has a word for a feeling English speakers knew intimately but couldn't name precisely: the small, complicated pleasure you feel when something goes wrong for someone who probably had it coming. English borrowed it wholesale because no combination of native words quite captured the mixture of guilt and satisfaction.",
+    "answer": "Schadenfreude",
+    "distractors": ["Weltschmerz", "Angst", "Wanderlust"],
+    "example": "She felt a flash of schadenfreude when his perfectly curated dinner party burned the main course."
+  },
+  {
+    "id": "collateral-damage",
+    "category": "Euphemism",
+    "story": "Military planners in the 20th century needed language that could acknowledge the deaths of civilians in wartime without making them the grammatical subject of the sentence. The phrase they landed on treated human lives as an incidental byproduct of an operation — passive, technical, and almost entirely stripped of human weight.",
+    "answer": "Collateral damage",
+    "distractors": ["Friendly fire", "Strategic withdrawal", "Acceptable loss"],
+    "example": "The report listed the destroyed homes as collateral damage, as if the families inside were an afterthought."
+  },
+  {
+    "id": "parochial",
+    "category": "Mot Juste",
+    "story": "When a newly arrived Oxford don dismissed his colleague's previous university as merely 'provincial,' the colleague replied: 'I think I've gone from the provincial to the parochial.' The reply worked because one word did something a phrase couldn't — it implied not just distance from the center, but the failure to realize that your small parish isn't the center of the universe.",
+    "answer": "Parochial",
+    "distractors": ["Insular", "Provincial", "Myopic"],
+    "example": "His parochial worldview made him dismissive of any cuisine that wasn't from his hometown."
+  },
+  {
+    "id": "road-to-hell",
+    "category": "Adage",
+    "story": "Medieval theologians wrestled with a persistent problem: why do people cause so much harm while sincerely trying to do good? Saint Bernard of Clairvaux grappled with it in the 12th century. The danger, he argued, wasn't malice — it was the certainty of one's own virtue, which made people blind to the harm they were actually doing.",
+    "answer": "The road to hell is paved with good intentions",
+    "distractors": ["Virtue is its own reward", "No good deed goes unpunished", "The path of least resistance"],
+    "example": "She'd reorganized the entire filing system to help — the road to hell, he muttered, paved."
+  },
+  {
+    "id": "resist-temptation",
+    "category": "Epigram",
+    "story": "Oscar Wilde had a gift for constructing sentences that announced a moral principle and then quietly undermined it. This particular line appears in Lady Windermere's Fan, spoken by a character making a confession about his character — one that sounds like wisdom until you realize it is a complete abdication of it.",
+    "answer": "I can resist everything except temptation",
+    "distractors": ["The truth is rarely pure and never simple", "I have nothing to declare except my genius", "Work is the curse of the drinking classes"],
+    "example": "He'd sworn off dessert menus, but — I can resist everything except temptation — ordered the tarte tatin."
+  },
+  {
+    "id": "stitch-in-time",
+    "category": "Proverb",
+    "story": "English textile workers understood a simple truth: a single loose thread, caught early, required one stitch to repair. Left alone for even a short time, it would unravel into a tear requiring nine. The observation spread far beyond sewing because anyone who had ever postponed a small problem recognized exactly what it described.",
+    "answer": "A stitch in time saves nine",
+    "distractors": ["Make hay while the sun shines", "An ounce of prevention is worth a pound of cure", "Measure twice, cut once"],
+    "example": "She reviewed the contract carefully before signing. A stitch in time."
+  },
+  {
+    "id": "actions-speak",
+    "category": "Maxim",
+    "story": "The gap between what people say they will do and what they actually do is one of the oldest observations in human experience. It appears in folk sayings across cultures, in legal traditions that weight conduct over declaration, and in moral philosophy from Aristotle onward. At some point it crystallized into a rule — brief enough to remember, blunt enough to sting.",
+    "answer": "Actions speak louder than words",
+    "distractors": ["Practice what you preach", "The proof is in the pudding", "Talk is cheap"],
+    "example": "He'd promised to change for years. Actions speak louder than words."
+  },
+  {
+    "id": "spill-the-beans",
+    "category": "Idiom",
+    "story": "In ancient Greece, votes were cast by dropping beans into a ceramic jar — white beans for yes, black for no. The count was meant to be secret until all votes were in. If someone accidentally knocked the jar over before the tally was finished, the hidden result was suddenly visible to everyone in the room.",
+    "answer": "Spill the beans",
+    "distractors": ["Let the cat out of the bag", "Blow the whistle", "Open the kimono"],
+    "example": "She hadn't meant to spill the beans about the surprise party, but she was a terrible liar."
+  }
+]
