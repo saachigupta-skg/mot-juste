@@ -678,5 +678,245 @@
     "answer": "Every cloud has a silver lining",
     "distractors": ["It's always darkest before the dawn", "Into each life some rain must fall", "This too shall pass"],
     "example": "She hated when people said it to her — every cloud — but later admitted the delay had been exactly what the project needed."
+  },
+  {
+    "id": "bury-the-hatchet",
+    "category": "Idiom",
+    "story": "Among many Native American nations, the formal end to a conflict came with a physical act: weapons were buried in the ground. The Haudenosaunee (Iroquois) Confederacy practiced this ceremony — a hatchet interred beneath a great tree signified the agreement not to take it up again. European colonists observed and recorded the ritual. The phrase traveled into English, detached gradually from any specific ceremony, and became a general term for making peace — one of the few idioms whose origin is an act of genuine diplomacy.",
+    "answer": "Bury the hatchet",
+    "distractors": ["Let bygones be bygones", "Mend fences", "Turn over a new leaf"],
+    "example": "They'd been on opposite sides of the deal for six months. Over dinner, both sides buried the hatchet and got the contract signed."
+  },
+  {
+    "id": "raining-cats-and-dogs",
+    "category": "Idiom",
+    "story": "The most credible explanation is unglamorous: in 17th-century London, drainage was poor and gutters were clogged with debris. During severe storms, gutters overflowed and the streets ran with whatever had accumulated in them — including the bodies of drowned animals. When Jonathan Swift described this in 1710, he may not have been entirely metaphorical. The phrase we use for heavy rain has its roots in one of the less charming facts about pre-modern urban infrastructure.",
+    "answer": "Raining cats and dogs",
+    "distractors": ["Bucketing down", "Coming down in sheets", "Opening the heavens"],
+    "example": "She'd chosen an outdoor venue in good faith. Then it rained cats and dogs for three hours and everyone retreated to the parking garage."
+  },
+  {
+    "id": "cold-turkey",
+    "category": "Idiom",
+    "story": "The phrase emerged in early 20th-century North American slang for abrupt withdrawal from an addiction. The most likely explanation is physical: a person in withdrawal looks like cold, cooked turkey — pale, sweating, covered in goosebumps from the chills. The comparison is unflattering but accurate. An alternative theory credits the no-preparation nature of cold turkey as a meal: no cooking required, no planning, you simply stop. The physical description has more evidence behind it.",
+    "answer": "Cold turkey",
+    "distractors": ["White-knuckling", "Going clean", "Kicking the habit"],
+    "example": "She quit on a Tuesday, cold turkey, with no patches and no plan — just sheer spite as a strategy."
+  },
+  {
+    "id": "bite-the-dust",
+    "category": "Idiom",
+    "story": "The image appears in Homer's Iliad — Greek warriors \"biting the sacred earth\" as they fall. Alexander Pope's 1715 English translation made the phrase familiar to English readers. It also appears independently in the King James Bible. A phrase this old has had many origins, which is itself testimony to how precisely it captures one thing: the specific posture of a person killed in battle, face-down in the ground. Freddie Mercury made it famous again in 1980, though he meant it differently.",
+    "answer": "Bite the dust",
+    "distractors": ["Buy the farm", "Meet your maker", "Go under"],
+    "example": "Three prototypes bit the dust before they found one that held up in field conditions."
+  },
+  {
+    "id": "toska",
+    "category": "Loanword",
+    "story": "Vladimir Nabokov described it more precisely than any dictionary entry: \"No single word in English renders all the shades of toska. At its deepest and most painful, it is a sensation of great spiritual anguish, often without any specific cause. At less morbid levels it is a dull ache of the soul, a longing with nothing to long for, a sick pining, a vague restlessness.\" English has sadness, grief, longing, melancholy — but nothing that names the specific condition of aching in a direction where there is nothing.",
+    "answer": "Toska",
+    "distractors": ["Hiraeth", "Sehnsucht", "Weltschmerz"],
+    "example": "She called it homesickness, but it was more than that — closer to toska, a grief for something that existed only in memory."
+  },
+  {
+    "id": "sobremesa",
+    "category": "Loanword",
+    "story": "Spanish has a word for the time after a meal when no one gets up. It means literally \"over the table\" — the conversation, the wine, the company that keeps people seated long after the food is gone. The French linger too and have no word for it. The English tend to ask if anyone wants coffee, which functions as a hint. The Spanish formalized what other cultures practice informally but never bothered to name.",
+    "answer": "Sobremesa",
+    "distractors": ["Siesta", "Tertulia", "Convivencia"],
+    "example": "The dinner ended at eight but the sobremesa lasted until midnight — four hours of candles burning down, no one quite ready to leave."
+  },
+  {
+    "id": "mono-no-aware",
+    "category": "Loanword",
+    "story": "The 18th-century Japanese scholar Motoori Norinaga gave a name to something at the heart of Japanese literary tradition: the bittersweet awareness that beautiful things are impermanent. Cherry blossoms are the classic example — more beautiful, the tradition holds, because they fall. The concept shaped Japanese poetry, film, and design for centuries before Western aesthetics found vocabulary for the same feeling. \"Bittersweet\" covers half of it; the other half is the awareness itself, held consciously.",
+    "answer": "Mono no aware",
+    "distractors": ["Wabi-sabi", "Yugen", "Mugen"],
+    "example": "The last morning of the trip had that quality — mono no aware, beautiful precisely because it was ending."
+  },
+  {
+    "id": "waldeinsamkeit",
+    "category": "Loanword",
+    "story": "German Romanticism produced a word for a specific emotional experience most people recognize but cannot name: the feeling of being alone in the forest — not lonely, but solitary in a way that feels right. The stillness of trees, the sense of being held by something vast and indifferent, the suspension of ordinary time. Ralph Waldo Emerson encountered the word and used it in an 1841 poem, crediting it explicitly as untranslatable. Some words are borrowed precisely because no substitute exists.",
+    "answer": "Waldeinsamkeit",
+    "distractors": ["Fernweh", "Naturverbundenheit", "Heimweh"],
+    "example": "She ran the same trail every morning partly for the exercise and partly for the Waldeinsamkeit — thirty minutes where nothing could reach her."
+  },
+  {
+    "id": "let-go",
+    "category": "Euphemism",
+    "story": "Corporate English in the 20th century needed language that could acknowledge an employee's termination while maintaining a sense of mutual dignity — or at least minimizing legal and emotional exposure. The phrase that emerged treated firing as a kind of release: not \"we are removing you\" but \"we are freeing you.\" The construction made the company the agent of liberation rather than expulsion. The passive framing placed the employee at the end of the sentence, as something that was simply happening. The employee, newly without income, has always been free to feel otherwise.",
+    "answer": "Let go",
+    "distractors": ["Made redundant", "Downsized", "Restructured out"],
+    "example": "He was let go on a Friday afternoon — handed a box, a parking validation, and the information that it wasn't personal."
+  },
+  {
+    "id": "ethnic-cleansing",
+    "category": "Euphemism",
+    "story": "The phrase entered international journalism during the wars following Yugoslavia's dissolution in the 1990s, used initially by Serbian political figures to describe the forced removal — and killing — of non-Serbian populations from claimed territories. The choice of \"cleansing\" was deliberate: it implied hygiene, purification, something reasonable. European and American news organizations adopted it as a neutral descriptor, then debated for years whether printing it without quotation marks validated the framing. The events described continued while the debate ran.",
+    "answer": "Ethnic cleansing",
+    "distractors": ["Population transfer", "Forced relocation", "Demographic adjustment"],
+    "example": "The UN report used the phrase throughout without quotation marks — a choice that was itself a decision about what language was doing."
+  },
+  {
+    "id": "ostracize",
+    "category": "Mot Juste",
+    "story": "Athens in the 5th century BCE had a formal procedure for removing a citizen deemed dangerous to democracy — without charging them with any crime. Once a year, citizens voted by scratching a name on a pottery shard: ostrakon. If any name reached 6,000 votes, that person was exiled for ten years. The practice was meant to remove threats before they became catastrophic. Several of those ostracized were later recalled in emergencies because the city realized it needed them.",
+    "answer": "Ostracize",
+    "distractors": ["Exile", "Shun", "Banish"],
+    "example": "The group ostracized her after the falling-out — no confrontation, no explanation, just a slow vanishing from plans and invitations."
+  },
+  {
+    "id": "quarantine",
+    "category": "Mot Juste",
+    "story": "In 14th-century Venice, ships arriving from plague ports were required to anchor offshore and wait before anyone could disembark. The original waiting period was thirty days — \"trentino\" in Italian. It was extended to forty — \"quarantino\" — because forty had religious significance (forty days of Lent, forty years in the desert) and also because thirty days had not been enough. The word we use for any isolation practice is the Italian word for forty.",
+    "answer": "Quarantine",
+    "distractors": ["Isolation", "Lockdown", "Cordon sanitaire"],
+    "example": "The word had lived in medical textbooks for six centuries before 2020 made it part of daily conversation."
+  },
+  {
+    "id": "quixotic",
+    "category": "Mot Juste",
+    "story": "Don Quixote — published by Cervantes in 1605 — follows an elderly man who has read too many chivalric romances and lost his grip on reality. He sets out to be a knight-errant, attacks windmills believing them to be giants, and pursues a peasant woman he has reimagined as a noble lady. The novel gave the language a precise word for a specific kind of idealism: visionary, impractical, and completely sincere. The distinction from mere foolishness is the sincerity — which is what makes it both moving and unworkable.",
+    "answer": "Quixotic",
+    "distractors": ["Idealistic", "Romantic", "Utopian"],
+    "example": "The proposal was quixotic at best — she knew that — but she submitted it anyway, and it worked."
+  },
+  {
+    "id": "berserk",
+    "category": "Mot Juste",
+    "story": "Norse warriors known as \"berserkers\" were described in sagas as fighting in a state of trance-like fury — feeling no pain, stopping for nothing, terrifying to face. They wore bear skins — \"ber\" meaning bear — and worked themselves into this state before battle through ritual and conditioning. Whether the behavior was induced by substances, psychology, or simply the demands of survival, it was frightening enough that their name became the English word for uncontrolled, violent frenzy.",
+    "answer": "Berserk",
+    "distractors": ["Unhinged", "Frenzied", "In a rampage"],
+    "example": "The server went berserk at 3am — logs spitting errors, no obvious cause, the on-call engineer awake and regretting her career choices."
+  },
+  {
+    "id": "sabotage",
+    "category": "Mot Juste",
+    "story": "When French workers in the early Industrial Revolution protested the mechanized looms eliminating their jobs, they reportedly threw their wooden shoes — \"sabots\" — into the machinery to jam it. Whether this happened at scale is disputed by historians, but the image was vivid enough that the word stuck. It gave the labor movement a verb, then gave warfare and intelligence services one. The wooden shoe lodged in the gears survived every industrial revolution that followed.",
+    "answer": "Sabotage",
+    "distractors": ["Vandalism", "Subversion", "Disruption"],
+    "example": "Whether the leak was sabotage or incompetence wasn't yet clear — the outcome was the same either way."
+  },
+  {
+    "id": "blood-is-thicker-than-water",
+    "category": "Proverb",
+    "story": "The phrase as commonly used implies family loyalty outweighs all other bonds. But some scholars argue this inverts the original meaning. A fuller version — possibly from a 12th-century German text — runs: \"The blood of the covenant is thicker than the water of the womb.\" In that reading, bonds forged through shared experience and sworn commitment are stronger than the accident of birth. If true, the saying has survived centuries in a form that means the opposite of what it started as.",
+    "answer": "Blood is thicker than water",
+    "distractors": ["Family comes first", "Charity begins at home", "You can choose your friends"],
+    "example": "She flew across the country when her cousin called — blood is thicker than water, though she would have done it for her closest friends too."
+  },
+  {
+    "id": "lead-a-horse-to-water",
+    "category": "Proverb",
+    "story": "The proverb appears in English as early as 1175, making it one of the oldest still in active use. It began as a practical observation: you could bring a horse to water, but horses drank only when they chose to. By the 13th century it was already being applied to human beings. Almost every culture developed an equivalent — the observation that external circumstances can be arranged perfectly without producing the desired internal change. The proverb has outlasted every attempt to engineer its solution.",
+    "answer": "You can lead a horse to water but you can't make it drink",
+    "distractors": ["You can't teach an old dog new tricks", "The road to hell is paved with good intentions", "You reap what you sow"],
+    "example": "She'd made the appointment, offered to drive, found the therapist herself. You can lead a horse to water."
+  },
+  {
+    "id": "all-that-glitters",
+    "category": "Proverb",
+    "story": "Shakespeare put the line in The Merchant of Venice in 1596 — spoken by the Prince of Morocco, who chooses the golden casket and finds a skull inside. The most beautiful option contained nothing worth having. Shakespeare's actual line was \"all that glisters is not gold\" — \"glisters\" being the period term — but four centuries of quotation have standardized the misquotation. The skull is still inside the box. The warning is still ignored at roughly the same rate.",
+    "answer": "All that glitters is not gold",
+    "distractors": ["Don't judge a book by its cover", "A wolf in sheep's clothing", "Things are not always what they seem"],
+    "example": "The offer looked perfect on paper — title, salary, brand name. All that glitters."
+  },
+  {
+    "id": "map-is-not-territory",
+    "category": "Maxim",
+    "story": "Alfred Korzybski was a Polish-American philosopher who spent his career studying how language shapes perception. In 1931, he coined the phrase to articulate something simple but consequential: any description of a thing is not the thing itself. A map is useful, but it omits nearly everything that's actually there. A word is useful, but it isn't the object it names. The danger, Korzybski argued, is treating the description as the reality — and then being surprised when they diverge.",
+    "answer": "The map is not the territory",
+    "distractors": ["Occam's Razor", "The medium is the message", "Correlation is not causation"],
+    "example": "She kept revising the project plan instead of doing the project — the map is not the territory, her manager said, and meant it kindly."
+  },
+  {
+    "id": "caveat-emptor",
+    "category": "Maxim",
+    "story": "Roman commercial law formalized a principle that had existed informally since the first markets: the burden of due diligence falls on the buyer. \"Caveat emptor\" — let the buyer beware — held sellers liable only for outright fraud, not for a buyer's failure to inspect. 20th-century consumer protection law began eroding the doctrine; implied warranty law now qualifies it in most jurisdictions. But enough transactions still operate on the original principle that the phrase remains a useful warning.",
+    "answer": "Caveat emptor",
+    "distractors": ["Cui bono", "Mea culpa", "Quid pro quo"],
+    "example": "She'd bought the car without a mechanic's inspection. Caveat emptor, her father said, when the transmission failed two weeks later."
+  },
+  {
+    "id": "not-my-circus",
+    "category": "Idiom",
+    "story": "The Polish phrase — \"Nie mój cyrk, nie moje małpy\" — is believed to have circulated in Polish for generations before entering English via the internet around 2012. Its appeal in English was immediate: it captured the specific decision not to get involved in someone else's chaos, with a vividness that no English equivalent had. The circus is their chaos; the monkeys are their people. You can observe it. You do not have to run it. The phrase spread globally within a few years, largely stripped of its Polish origins.",
+    "answer": "Not my circus, not my monkeys",
+    "distractors": ["Not my problem", "I wash my hands of it", "That's above my pay grade"],
+    "example": "Her former team's reorganization drama was spectacular to watch from across the company. Not my circus."
+  },
+  {
+    "id": "fish-rots-from-head",
+    "category": "Proverb",
+    "story": "The saying appears in various forms across Turkish, Greek, and Eastern European traditions — likely rooted in Mediterranean trading cultures where fish and leadership were both common subjects of observation. The earliest documented use is in a 16th-century Turkish text. There is, incidentally, a factual dispute: fish do not actually rot from the head first — they decay from the gut outward. The proverb was wrong about the fish but right about organizations, which may be why it survived.",
+    "answer": "The fish rots from the head",
+    "distractors": ["Power tends to corrupt, and absolute power corrupts absolutely", "A bad apple spoils the barrel", "The tone is set at the top"],
+    "example": "The culture problems weren't random — the fish rots from the head, and the head had been checked out for years."
+  },
+  {
+    "id": "omelet-eggs",
+    "category": "Proverb",
+    "story": "The French proverb \"On ne saurait faire une omelette sans casser des œufs\" — you can't make an omelet without breaking eggs — was circulating in France well before the Revolution. It describes the unavoidability of disruption in the pursuit of anything useful. The saying was later co-opted by 20th-century authoritarian rhetoric to justify human costs in the pursuit of ideological ends — which gave it a darker overtone. The omelet metaphor does not survive the scale of the borrowers.",
+    "answer": "You can't make an omelet without breaking eggs",
+    "distractors": ["The ends justify the means", "No pain, no gain", "Fortune favors the bold"],
+    "example": "The restructuring would eliminate thirty roles — she knew that — but you can't make an omelet."
+  },
+  {
+    "id": "broken-clock",
+    "category": "Adage",
+    "story": "The saying turns on a logical precision most people don't examine: it requires a stopped clock, not a broken one. A broken clock might show no time at all, or an impossible one. A stopped clock shows exactly the same time forever — and twice every 24 hours, pure chance makes it accurate. The observation is genuinely useful: it cautions against treating occasional correctness as evidence of underlying soundness. Even the stopped clock gets it right eventually. The question is whether you can tell which moment it is.",
+    "answer": "Even a broken clock is right twice a day",
+    "distractors": ["Even a blind squirrel finds a nut sometimes", "Luck favors the prepared", "Beginner's luck"],
+    "example": "He'd predicted the market crash — his third prediction in ten years. Even a broken clock."
+  },
+  {
+    "id": "apple-tree",
+    "category": "Proverb",
+    "story": "The German version — \"Der Apfel fällt nicht weit vom Stamm\" — appears in print by the early 19th century and was likely circulating earlier. It predates genetics by decades; people observed heredity long before they could explain it. The image is precise: an apple falls, rolls a little, and stops — close, but not directly under. The proverb acknowledges both resemblance and distance. Children inherit their parents' traits but are not their parents. The apple lands near the tree. Not on top of it.",
+    "answer": "The apple doesn't fall far from the tree",
+    "distractors": ["Like father, like son", "The acorn doesn't fall far from the oak", "Blood will tell"],
+    "example": "She had the same laugh as her mother, the same stubbornness — the apple, everyone agreed, had not traveled far."
+  },
+  {
+    "id": "rising-tide",
+    "category": "Aphorism",
+    "story": "John F. Kennedy used the phrase in a 1963 speech in Pueblo, Colorado, arguing that a regional dam project would benefit the whole economy — not just those directly served. He was borrowing it from the New England Council, a regional business group that had used it in the 1950s to make a case for broad investment. The phrase entered political vocabulary as shorthand for the argument that growth itself distributes benefits, without redistributive policy. Economists have debated the premise ever since.",
+    "answer": "A rising tide lifts all boats",
+    "distractors": ["A chain is only as strong as its weakest link", "Prosperity is shared or it isn't prosperity", "All boats rise and fall together"],
+    "example": "He made the case for the infrastructure bill using the rising tide — broad investment, shared benefit. His opponents were ready with the counterargument."
+  },
+  {
+    "id": "smooth-seas",
+    "category": "Adage",
+    "story": "The sentiment is old — Seneca wrote a version of it in the first century: \"It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.\" The specific nautical formulation has been attributed variously to African proverb tradition, to Franklin D. Roosevelt, and to anonymous maritime lore, without any source being verified. What's consistent across versions is the counterintuitive claim: difficulty is not a problem to solve but a condition that produces something that calm cannot.",
+    "answer": "Smooth seas do not make skillful sailors",
+    "distractors": ["Adversity builds character", "What doesn't kill you makes you stronger", "The impediment to action advances action"],
+    "example": "She'd been grateful, later, for the worst projects — smooth seas do not make skillful sailors, and she'd come out of that stretch good at the job."
+  },
+  {
+    "id": "plant-a-tree",
+    "category": "Proverb",
+    "story": "The saying is widely attributed to ancient Chinese wisdom, but the earliest documented versions are surprisingly recent — appearing in American publications in the 1980s and 1990s. The Chinese origin may be entirely apocryphal, attached after the fact to lend the observation antiquity and authority. The substance, regardless: the regret about the past is real but unactionable; the opportunity in the present is real and actionable. The second-best time is the only time you actually have.",
+    "answer": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "distractors": ["You reap what you sow", "A stitch in time saves nine", "Make hay while the sun shines"],
+    "example": "She'd been meaning to start the course for two years. The best time to plant a tree was twenty years ago."
+  },
+  {
+    "id": "go-fast-go-far",
+    "category": "Adage",
+    "story": "The saying circulates as an African proverb — attributed variously to Swahili tradition, West African culture, or unspecified village wisdom — but no specific source has ever been documented in any African language. Linguists and proverb scholars have searched. The earliest verified English appearances are from the 1990s; Al Gore used it in a speech and it spread. The attribution to Africa functions as a kind of borrowed authority: the wisdom sounds ancient, so an origin is invented to match. The insight is real. The provenance is probably not.",
+    "answer": "If you want to go fast, go alone. If you want to go far, go together.",
+    "distractors": ["Many hands make light work", "It takes a village", "Alone we can do so little; together we can do so much"],
+    "example": "She could have shipped it faster working alone. But the team built something none of them could have imagined. If you want to go far."
+  },
+  {
+    "id": "journey-thousand-miles",
+    "category": "Maxim",
+    "story": "The line comes from the Tao Te Ching, Chapter 64, written by Laozi — likely in the 6th century BCE, though the text's authorship and date are debated. The original Chinese is \"千里之行，始於足下\" — a thousand-league journey begins from where you stand. The emphasis is on the starting point, not the distance. Laozi's larger argument in that chapter is about the value of small beginnings and the danger of trying to act too late, when things have already become large. The step is not the metaphor. It is the teaching.",
+    "answer": "The journey of a thousand miles begins with a single step",
+    "distractors": ["Rome wasn't built in a day", "Great oaks from little acorns grow", "Every expert was once a beginner"],
+    "example": "She opened a blank document and typed one sentence. The journey of a thousand miles."
   }
 ]
