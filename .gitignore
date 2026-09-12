@@ -4,3 +4,7 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# Personal drafts and notes
+NOTES.md
+linkedin-drafts.md

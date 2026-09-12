@@ -90,9 +90,11 @@ function shuffleArray<T>(arr: T[]): T[] {
   return a;
 }
 
-export function buildSmartSession(size = 10): Card[] {
+export function buildSmartSession(size = 10, categories?: string[]): Card[] {
   const progress = getCardProgress();
-  const allCards = cardsData as Card[];
+  const allCards = categories
+    ? (cardsData as Card[]).filter(c => categories.includes(c.category))
+    : (cardsData as Card[]);
 
   // Bucket cards
   const needsReview: Card[] = [];   // wrong > 0

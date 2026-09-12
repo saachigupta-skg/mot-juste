@@ -33,3 +33,18 @@ export async function saveProgress(progress: Omit<UserProgress, 'user_id'>) {
     .from('user_progress')
     .upsert({ user_id: user.id, ...progress, updated_at: new Date().toISOString() });
 }
+
+// Requires a `feedback` table:
+// create table feedback (
+//   id uuid default gen_random_uuid() primary key,
+//   created_at timestamptz default now(),
+//   message text not null,
+//   email text
+// );
+// create policy "Anyone can insert feedback" on feedback for insert with check (true);
+export async function saveFeedback(message: string, email?: string): Promise<boolean> {
+  const { error } = await supabase
+    .from('feedback')
+    .insert({ message, email: email || null });
+  return !error;
+}

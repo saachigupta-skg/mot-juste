@@ -16,7 +16,11 @@ interface Card {
   example: string;
 }
 
-type Phase = 'quiz' | 'reveal' | 'summary';
+type Mode = 'words' | 'phrases' | 'all';
+type Phase = 'mode-select' | 'quiz' | 'reveal' | 'summary';
+
+const WORD_CATEGORIES = ['Mot Juste', 'Loanword', 'Euphemism'];
+const PHRASE_CATEGORIES = ['Idiom', 'Proverb', 'Adage', 'Aphorism', 'Epigram', 'Maxim'];
 type AnswerState = 'default' | 'selected' | 'correct' | 'wrong' | 'disabled-correct';
 
 const SESSION_SIZE = 10;
@@ -95,9 +99,9 @@ interface Toast {
 }
 
 export default function Quiz() {
-  const [phase, setPhase] = useState<Phase>('quiz');
-  const [sessionCards] = useState<Card[]>(() => buildSmartSession(SESSION_SIZE));
-  const [choices, setChoices] = useState<string[]>(() => buildChoices(sessionCards[0]));
+  const [phase, setPhase] = useState<Phase>('mode-select');
+  const [sessionCards, setSessionCards] = useState<Card[]>([]);
+  const [choices, setChoices] = useState<string[]>([]);
   const [cardIndex, setCardIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
@@ -145,7 +149,15 @@ export default function Quiz() {
     }, 2800);
   }, []);
 
-  const currentCard = sessionCards[cardIndex];
+  const handleModeSelect = useCallback((mode: Mode) => {
+    const cats = mode === 'words' ? WORD_CATEGORIES : mode === 'phrases' ? PHRASE_CATEGORIES : undefined;
+    const cards = buildSmartSession(SESSION_SIZE, cats);
+    setSessionCards(cards);
+    setChoices(buildChoices(cards[0]));
+    setPhase('quiz');
+  }, []);
+
+  const currentCard = sessionCards[cardIndex] as Card;
 
   const handleAnswer = useCallback((choice: string) => {
     if (answered) return;
@@ -220,6 +232,10 @@ export default function Quiz() {
     ? `${numberToWords(streak).charAt(0).toUpperCase() + numberToWords(streak).slice(1)} ${streak === 1 ? 'day' : 'days'} running.`
     : null;
 
+  if (phase === 'mode-select') {
+    return <ModeSelect onSelect={handleModeSelect} />;
+  }
+
   if (phase === 'summary') {
     const progress = getCardProgress();
     const masteredCount = getMasteredCount(progress);
@@ -232,7 +248,17 @@ export default function Quiz() {
         streak={streak}
         masteredCount={masteredCount}
         level={level}
-        onRestart={() => window.location.reload()}
+        onRestart={() => {
+          setPhase('mode-select');
+          setCardIndex(0);
+          setSelected(null);
+          setAnswered(false);
+          setCorrectCount(0);
+          setSessionCorrect([]);
+          setSessionEarned([]);
+          setCardAnimation('none');
+          setPendingChallenge(null);
+        }}
       />
     );
   }
@@ -324,6 +350,7 @@ export default function Quiz() {
               text={choice}
               state={getChoiceState(choice)}
               disabled={answered}
+              wasSelected={answered && choice === selected}
               onClick={() => handleAnswer(choice)}
             />
           ))}
@@ -333,6 +360,99 @@ export default function Quiz() {
       {toasts.map(t => (
         <ToastNotification key={t.id} message={t.message} />
       ))}
+    </div>
+  );
+}
+
+function ModeSelect({ onSelect }: { onSelect: (mode: Mode) => void }) {
+  return (
+    <div className="card-surface animate-fade-in">
+      <p
+        style={{
+          fontFamily: '"DM Sans", sans-serif',
+          fontSize: '0.65rem',
+          fontWeight: 500,
+          letterSpacing: '0.12em',
+          textTransform: 'uppercase',
+          color: '#8a7560',
+          marginBottom: '1.75rem',
+          marginTop: 0,
+        }}
+      >
+        What would you like to study?
+      </p>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        {([
+          {
+            mode: 'words' as Mode,
+            label: 'Words',
+            sub: 'Mot Juste · Loanword · Euphemism',
+          },
+          {
+            mode: 'phrases' as Mode,
+            label: 'Phrases',
+            sub: 'Idiom · Proverb · Adage · Aphorism · Epigram · Maxim',
+          },
+          {
+            mode: 'all' as Mode,
+            label: 'Everything',
+            sub: 'All nine categories mixed',
+          },
+        ] as const).map(({ mode, label, sub }) => (
+          <button
+            key={mode}
+            type="button"
+            onClick={() => onSelect(mode)}
+            style={{
+              display: 'block',
+              width: '100%',
+              textAlign: 'left',
+              padding: '0.9rem 1rem',
+              borderLeft: '3px solid transparent',
+              background: 'transparent',
+              cursor: 'pointer',
+              transition: 'border-color 200ms ease-out, background-color 200ms ease-out',
+              borderTop: 'none',
+              borderRight: 'none',
+              borderBottom: 'none',
+              borderRadius: 0,
+            }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLButtonElement).style.borderLeftColor = '#b85c38';
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#e8e0d0';
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLButtonElement).style.borderLeftColor = 'transparent';
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'transparent';
+            }}
+          >
+            <span
+              style={{
+                display: 'block',
+                fontFamily: '"EB Garamond", serif',
+                fontSize: '1.25rem',
+                color: '#1a1208',
+                lineHeight: 1.2,
+              }}
+            >
+              {label}
+            </span>
+            <span
+              style={{
+                display: 'block',
+                fontFamily: '"DM Sans", sans-serif',
+                fontSize: '0.65rem',
+                letterSpacing: '0.06em',
+                color: '#8a7560',
+                marginTop: '0.2rem',
+              }}
+            >
+              {sub}
+            </span>
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

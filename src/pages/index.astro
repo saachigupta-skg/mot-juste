@@ -3,6 +3,7 @@ import Quiz from '../components/Quiz';
 import BingoBoard from '../components/BingoBoard';
 import AuthWidget from '../components/AuthWidget';
 import AboutToggle from '../components/AboutToggle';
+import FeedbackWidget from '../components/FeedbackWidget';
 import '../styles/global.css';
 ---
 
@@ -56,6 +57,8 @@ import '../styles/global.css';
           <Quiz client:only="react" />
         </div>
       </div>
+
+      <FeedbackWidget client:load />
     </main>
 
     <script>
